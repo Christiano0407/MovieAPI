@@ -1,0 +1,23 @@
+{
+  "name": "movieapi",
+  "version": "1.0.0",
+  "description": "project with javascrip and api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Christiano0407/MovieAPI.git"
+  },
+  "keywords": [
+    "js",
+    "api"
+  ],
+  "author": "Chris04",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Christiano0407/MovieAPI/issues"
+  },
+  "homepage": "https://github.com/Christiano0407/MovieAPI#readme"
+}
