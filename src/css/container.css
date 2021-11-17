@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 4rem;
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   padding: 1rem;
 }
 .container .movie {

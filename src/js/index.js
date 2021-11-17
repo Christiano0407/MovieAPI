@@ -1,18 +1,28 @@
 // API Javascript>
 //> Pagination
-let page = 1;
+let pages = 1;
 const btnBefore = document.getElementById(`btnBefore`);
 const btnAfter = document.getElementById(`btnAfter`);
 
-btnBefore.addEventListener(`click`, () => {});
+btnBefore.addEventListener(`click`, () => {
+  if (pages > 1) {
+    pages -= 1;
+    loadMovies();
+  }
+});
 
-btnAfter.addEventListener(`click`, () => {});
+btnAfter.addEventListener(`click`, () => {
+  if (pages < 1000) {
+    pages += 1;
+    loadMovies();
+  }
+});
 
 // (A)> Cargar películas>>
 const loadMovies = async () => {
   try {
     const request = await fetch(
-      `https://api.themoviedb.org/3/movie/popular?api_key=c66eb9e2b42b5d1d179fff7ac34ce71f&language=es-MX`
+      `https://api.themoviedb.org/3/movie/popular?api_key=c66eb9e2b42b5d1d179fff7ac34ce71f&language=es-MX&page=${pages}`
     );
     console.log(request);
     //> Comprobar => Estado
