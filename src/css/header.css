@@ -81,7 +81,7 @@ li.k-item a:hover {
   justify-content: flex-end;
   width: 253px;
   height: 40px;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 .flex .primary {
   width: 100%;
@@ -121,4 +121,20 @@ li.k-item a:hover {
 i {
   font-size: 1.4rem;
   color: #fff;
+}
+.new_icon .avatar {
+  background: aqua;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.new_icon .color {
+  color: aqua;
 }

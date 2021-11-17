@@ -1,24 +1,24 @@
 // API Javascript>
 //> Pagination
 let pages = 1;
-const btnBefore = document.getElementById(`btnBefore`);
-const btnAfter = document.getElementById(`btnAfter`);
+//const btnBefore = document.getElementById(`btnBefore`);
+//const btnAfter = document.getElementById(`btnAfter`);
 
-btnBefore.addEventListener(`click`, () => {
-  if (pages > 1) {
-    pages -= 1;
-    loadMovies();
-  }
-});
+/* btnBefore.addEventListener(`click`, () => { */
+/*   if (pages > 1) { */
+/*     pages -= 1; */
+/*     loadMovies(); */
+/*   } */
+/* }); */
 
-btnAfter.addEventListener(`click`, () => {
-  if (pages < 1000) {
-    pages += 1;
-    loadMovies();
-  }
-});
+/* btnAfter.addEventListener(`click`, () => { */
+/*   if (pages < 1000) { */
+/*     pages += 1; */
+/*     loadMovies(); */
+/*   } */
+/* }); */
 
-// (A)> Cargar películas>>
+// (A)> Cargar películas>>>>>>>>>>>>>>
 const loadMovies = async () => {
   try {
     const request = await fetch(
