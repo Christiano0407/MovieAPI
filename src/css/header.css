@@ -1,0 +1,77 @@
+.header {
+  width: 100%;
+  background-color: #241744;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.header .nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.header .nav .sub_media {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 0;
+  left: 0;
+  max-width: 1300px;
+  width: 100%;
+  padding: 0 4rem;
+}
+.nav_wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  overflow: hidden;
+}
+.logo {
+  display: block;
+  margin-right: 16px;
+  width: 154px;
+  height: 20px;
+}
+.nav_wrapper .logo img {
+  object-fit: cover;
+  background-size: cover;
+  display: block;
+  width: 100%;
+}
+ul.drop_menu {
+  padding: 0;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  position: relative;
+}
+li.k-item {
+  z-index: auto;
+  /* color: #000; */
+  /* font-weight: bold; */
+  display: flex;
+  margin-right: 1.4rem;
+  outline: none;
+  position: relative;
+}
+li.k-item a {
+  color: #fff;
+  font-weight: 600;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  white-space: nowrap;
+  cursor: pointer;
+}
+li.k-item a:hover {
+  color: lightgray;
+}
