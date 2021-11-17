@@ -13,16 +13,20 @@
   text-align: center;
 }
 .container .movie .title {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 700;
+  text-transform: uppercase;
 }
 .container .movie .poster {
   width: 100%;
   margin-bottom: 1rem;
   border-radius: 1.5rem;
 }
+.poster:active {
+  transform: scale(1.1);
+}
 .poster:hover {
-  filter: opacity(0.6);
+  filter: grayscale(1);
   cursor: pointer;
 }
 .poster :active {
@@ -63,6 +67,9 @@
 }
 .pagination .btn:hover {
   border: 2px solid #fff;
+}
+.pagination .btn:active {
+  transform: scale(0.9);
 }
 .btn i:active {
   transform: scale(0.9);

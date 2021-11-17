@@ -1,4 +1,13 @@
 // API Javascript>
+//> Pagination
+let page = 1;
+const btnBefore = document.getElementById(`btnBefore`);
+const btnAfter = document.getElementById(`btnAfter`);
+
+btnBefore.addEventListener(`click`, () => {});
+
+btnAfter.addEventListener(`click`, () => {});
+
 // (A)> Cargar películas>>
 const loadMovies = async () => {
   try {
