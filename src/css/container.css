@@ -19,6 +19,7 @@
 }
 .container .movie .poster {
   width: 100%;
+  min-height: 20rem; /*Intersection Observer*/
   margin-bottom: 1rem;
   border-radius: 1.5rem;
 }
@@ -32,6 +33,7 @@
 }
 .poster :active {
   transform: scale(1.2);
+  transition-duration: 4s;
 }
 /* .pagination { */
 /*   width: 100%; */
