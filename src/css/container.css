@@ -3,4 +3,11 @@
   width: 90%;
   max-width: 1000px;
   margin: 4rem auto 10rem auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+  border: 2px solid black;
+}
+.container .movie {
+  text-align: center;
 }

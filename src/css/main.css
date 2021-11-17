@@ -1,5 +1,5 @@
 /*Import Containers*/
-@import url(/src/css/.container);
+@import url(container.css);
 /*Root / Colors*/
 
 /*Basic Styles*/
@@ -25,6 +25,7 @@ img {
 }
 body {
   font-family: "Montserrat", sans-serif;
+  background: #e0e0e0;
 }
 
 .main {
