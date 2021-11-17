@@ -16,3 +16,54 @@
   font-size: 1.6rem;
   font-weight: 700;
 }
+.container .movie .poster {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 1.5rem;
+}
+.poster:hover {
+  filter: opacity(0.6);
+  cursor: pointer;
+}
+.poster :active {
+  transform: scale(1.2);
+}
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  /* background: #100a1f; */
+  bottom: 0;
+  position: fixed;
+}
+.pagination .btn {
+  padding: 1rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6rem;
+  width: 6rem;
+  cursor: pointer;
+  background: #241744;
+  border-radius: 10rem;
+}
+.btn i {
+  color: #fff;
+  padding: 0.5rem;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  outline: none;
+}
+.pagination .btn:hover {
+  border: 2px solid #fff;
+}
+.btn i:active {
+  transform: scale(0.9);
+}

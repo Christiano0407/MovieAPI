@@ -10,11 +10,16 @@ const loadMovies = async () => {
     if (request.status === 200) {
       //> Data
       const data = await request.json();
-
+      //>
       let movies = " ";
       //>
       data.results.forEach((movie) => {
-        movies += `<h1>${movie.title}</h1>`;
+        movies += ` 
+         <div class="movie">
+          <img class="poster" src="https://image.tmdb.org/t/p/w500/${movie.poster_path}">
+          <h2 class="title">${movie.title}</h2>;
+         </div>
+         `;
       });
       document.getElementById(`container`).innerHTML = movies;
 
