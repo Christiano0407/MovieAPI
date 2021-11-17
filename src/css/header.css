@@ -75,3 +75,50 @@ li.k-item a {
 li.k-item a:hover {
   color: lightgray;
 }
+.flex {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  width: 253px;
+  height: 40px;
+  border: 1px solid red;
+}
+.flex .primary {
+  width: 100%;
+  justify-content: space-evenly;
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.glyph {
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.new_icon {
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+}
+.new_icon span {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+  min-height: 1rem;
+  min-width: 1rem;
+  width: 1rem;
+  height: 1rem;
+  line-height: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+i {
+  font-size: 1.4rem;
+  color: #fff;
+}
