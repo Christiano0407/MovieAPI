@@ -23,16 +23,17 @@ main {
   grid-template-columns: repeat(4, 1fr);
   gap: 4rem;
 }
-.container .movie {
+.movie {
   text-align: center;
 }
-.container .movie .title {
+.title {
   font-size: 1.6rem;
   font-weight: 600;
+  text-align: center;
 }
-.container .movie .poster {
+.poster {
   width: 100%;
-  min-height: 20rem;
+  min-height: 200px;
   margin-bottom: 1rem;
   border-radius: 1.5rem;
 }
