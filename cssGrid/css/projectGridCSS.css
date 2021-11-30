@@ -26,11 +26,73 @@ a {
   text-decoration: none;
 }
 img {
-  object-fit: cover;
+  object-fit: cover; /*Se ajusta al tamaño especificado*/
+  /* object-fit: contain; */ /*Se ajusta al contenedor*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 body {
   width: 100%;
+}
+main {
+  border: 4px solid red;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.hero-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.food-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.5rem;
+  place-items: center;
+}
+.hero-title {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.hero-text {
+  font-size: 1.2rem;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  letter-spacing: 0.1rem;
+}
+.hero-btn {
+  padding: 1rem;
+  background-color: #000000;
+  width: 80%;
+  height: 50%;
+  border: none;
+  color: #ffffff;
+  margin: 0 auto;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+}
+.hero-btn:active {
+  transform: scale(0.9);
+}
+
+figure .hero-img {
+  width: 100%;
+  object-fit: contain;
 }
