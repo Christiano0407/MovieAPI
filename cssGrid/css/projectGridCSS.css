@@ -59,7 +59,7 @@ main {
   margin: 0 auto;
   /* grid-template-columns: repeat(2, minmax(360px, 1fr)); */
   /*  gap: 1rem; */
-  border: 4px solid red;
+  /*  border: 4px solid red; */
 }
 .food-info {
   display: grid;
@@ -97,7 +97,7 @@ figure .hero-img {
 /* == Dishes ==*/
 .dishes {
   margin: 2rem auto;
-  border: 4px solid black;
+  /* border: 4px solid black; */
 }
 .dishes-title {
   color: #333;
