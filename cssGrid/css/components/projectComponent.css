@@ -1,16 +1,17 @@
 .hero-btn {
   padding: 1rem;
-  background-color: #000000;
-  width: 50%;
-  height: 40%;
+  background: #000000;
+  /*  width: 50%; */
+  /*  height: 40%; */
   border: none;
   color: #ffffff;
   margin: 0 auto;
   border-radius: 1rem;
   cursor: pointer;
+  /* font-size: 8rem; */
 }
 .hero-btn:hover {
-  background-color: #ffffff;
+  background: #ffffff;
   color: #000000;
   border: 2px solid #000000;
 }
