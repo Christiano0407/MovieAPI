@@ -1,0 +1,19 @@
+.hero-btn {
+  padding: 1rem;
+  background-color: #000000;
+  width: 50%;
+  height: 40%;
+  border: none;
+  color: #ffffff;
+  margin: 0 auto;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+}
+.hero-btn:active {
+  transform: scale(0.9);
+}
