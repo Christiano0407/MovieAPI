@@ -101,19 +101,14 @@ figure .hero-img {
 }
 .dishes-title {
   color: #333;
-  font-size: 2rem;
-  font-weight: bold;
   text-align: center;
-  margin-bottom: 5rem;
   text-transform: uppercase;
 }
 .dishes-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(150px, 200px));
-  grid-auto-rows: 1fr;
+  /*  grid-template-columns: repeat(4, minmax(150px, 200px)); */
+  /*  grid-auto-rows: 1fr; */
   margin: 0 auto;
-  gap: 1.5rem;
-  justify-content: center;
 }
 
 .dishes-item {
@@ -123,5 +118,4 @@ figure .hero-img {
 }
 .dishes-item__big {
   /* = Inicia fila / Inicia columna / termina fila / termina columna = */
-  grid-area: 1 / 1 / 3 / 3;
 }
