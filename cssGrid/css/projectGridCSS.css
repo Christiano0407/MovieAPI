@@ -1,4 +1,10 @@
 /*-------------------------------------*/
+/*Css Component*/
+/*------------------------------------*/
+@import url("/css/mediaQuerie/projectQueries.css");
+@import url("/css/components/projectComponent.css");
+
+/*-------------------------------------*/
 /*Css root*/
 /*------------------------------------*/
 :root {
@@ -38,23 +44,25 @@ body {
 main {
   border: 4px solid red;
   width: 100%;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
 }
 .hero-container {
   display: grid;
-  grid-template-columns: repeat(2, minmax(250px, 1fr));
-  gap: 1rem;
+  margin: 0 auto;
+  /* grid-template-columns: repeat(2, minmax(360px, 1fr)); */
+  /*  gap: 1rem; */
 }
 .food-info {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 0.5rem;
+  /* grid-template-columns: 1fr; */
+  /* grid-template-rows: repeat(3, 1fr); */
+  /* gap: 0.5rem; */
   place-items: center;
 }
 .hero-title {
-  font-size: 3rem;
+  font-size: 4rem;
+  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,6 +72,7 @@ main {
 }
 .hero-text {
   font-size: 1.2rem;
+  font-weight: 400;
   margin: 0 auto;
   text-align: center;
   display: flex;
@@ -71,25 +80,7 @@ main {
   align-items: center;
   padding: 0.5rem;
   letter-spacing: 0.1rem;
-}
-.hero-btn {
-  padding: 1rem;
-  background-color: #000000;
-  width: 80%;
-  height: 50%;
-  border: none;
-  color: #ffffff;
-  margin: 0 auto;
-  border-radius: 1rem;
-  cursor: pointer;
-}
-.hero-btn:hover {
-  background-color: #ffffff;
-  color: #000000;
-  border: 2px solid #000000;
-}
-.hero-btn:active {
-  transform: scale(0.9);
+  filter: opacity(0.5);
 }
 
 figure .hero-img {
