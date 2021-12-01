@@ -96,13 +96,26 @@ figure .hero-img {
 
 /* == Dishes ==*/
 .dishes {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 1fr;
   margin: 1rem auto;
   border: 4px solid black;
-  gap: 1.5rem;
 }
+.dishes-title {
+  color: #333;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+}
+.dishes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 200px));
+  grid-auto-rows: 1fr;
+  margin: 0 auto;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
 .dishes-item {
   object-fit: cover;
   width: 100%;
@@ -110,5 +123,5 @@ figure .hero-img {
 }
 .dishes-item__big {
   /* = Inicia fila / Inicia columna / termina fila / termina columna = */
-  grid-area: 1 / 1 / 2 / 3;
+  grid-area: 1 / 1 / 3 / 3;
 }
