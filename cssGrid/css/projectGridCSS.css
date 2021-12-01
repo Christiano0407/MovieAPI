@@ -96,7 +96,7 @@ figure .hero-img {
 
 /* == Dishes ==*/
 .dishes {
-  margin: 1rem auto;
+  margin: 2rem auto;
   border: 4px solid black;
 }
 .dishes-title {
@@ -118,4 +118,32 @@ figure .hero-img {
 }
 .dishes-item__big {
   /* = Inicia fila / Inicia columna / termina fila / termina columna = */
+}
+
+/* MENU */
+.menu {
+  border: 5px solid violet;
+  margin: 2rem auto;
+}
+.menu-title {
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+}
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(100px, 250px));
+  margin: 0 auto;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.menu-grid-item {
+  background-color: lightgrey;
+  padding: 0.5rem;
+  border-top-left-radius: 4rem;
+}
+.menu-grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }

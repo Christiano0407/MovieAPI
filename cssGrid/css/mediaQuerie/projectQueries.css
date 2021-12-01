@@ -217,4 +217,11 @@
   .dishes-item__big {
     grid-area: 1 / 1 / 3 / 3;
   }
+
+  /* =MENU= */
+  .menu-title {
+    font-size: 4rem;
+    font-weight: bolder;
+    margin: 4rem auto;
+  }
 }
