@@ -57,7 +57,7 @@ main {
 .hero-container {
   display: grid;
   margin: 0 auto;
-  /* grid-template-columns: repeat(2, minmax(360px, 1fr)); */
+  /* grid-template-columns: minmax(300px, 2fr) 3fr; */
   /*  gap: 1rem; */
   /*  border: 4px solid red; */
 }
