@@ -8,12 +8,43 @@ body {
   height: 100vh;
   display: grid;
   place-items: center;
+  background-color: #160113;
 }
 main {
   background-color: #410238;
   width: 600px;
   height: 600px;
-  border: 2px solid red;
+  border: 5px solid white;
   display: grid;
   place-items: center;
+}
+.container {
+  background: #eb5bec;
+  border-radius: 16px;
+  display: grid;
+  height: 385px;
+  overflow: hidden;
+  place-items: center;
+  position: relative;
+  width: 315px;
+}
+.container::after {
+  content: "";
+  background-image: url("https://assets.codepen.io/9632/dolby-atmos.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  color: #ffffff;
+}
+.content p {
+  margin: 0;
+  color: #ffffff;
 }
