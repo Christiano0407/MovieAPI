@@ -106,9 +106,11 @@ figure .hero-img {
 }
 .dishes-grid {
   display: grid;
-  /*  grid-template-columns: repeat(4, minmax(150px, 200px)); */
-  /*  grid-auto-rows: 1fr; */
+  /* grid-template-columns: repeat(auto-fit, minmax(150px, 200px)); */
+  grid-auto-rows: 1fr;
+  gap: 25px;
   margin: 0 auto;
+  justify-content: center;
 }
 
 .dishes-item {
@@ -122,8 +124,8 @@ figure .hero-img {
 
 /* MENU */
 .menu {
-  border: 5px solid violet;
-  margin: 2rem auto;
+  /* border: 5px solid violet; */
+  margin: 3rem auto;
 }
 .menu-title {
   color: #333;
@@ -132,7 +134,11 @@ figure .hero-img {
 }
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(100px, 250px));
+  grid-template-columns: repeat(
+    auto-fit,
+    150px
+  ); /* = Siempre van a medir 150px / auto-fit: acomoda las columnas que sean necesarias = */
+  grid-auto-rows: 1fr;
   margin: 0 auto;
   justify-content: center;
   gap: 2.5rem;
