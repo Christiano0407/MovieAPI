@@ -1,6 +1,7 @@
 /*-------------------------------------*/
 /*Css Components*/
 /*------------------------------------*/
+@import url(/apiMovie/css/MediaQuerie/mediaQueries.css);
 @import url(/apiMovie/css/components/header.css);
 @import url(/apiMovie/css/components/main.css);
 /*-------------------------------------*/
