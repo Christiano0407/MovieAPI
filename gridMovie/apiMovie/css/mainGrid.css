@@ -12,6 +12,9 @@
   --clr-black: #000000;
   --clr-back1: #0b0d17;
   --clr-back2: #d0d6f9;
+  --clr-extra: #023047;
+  --clr-extraTwo: #333;
+  --clr-extraThree: #8ecae6;
   /*Color HSL*/
   --clr-dark: hsl(230 35% 7%);
   --clr-light: hsl(231 77% 99%);
@@ -84,5 +87,5 @@ p {
 body {
   width: 100%;
   /* font-family: "Poppins", sans-serif; */
-  background-color: #333;
+  background-color: var(--clr-extra);
 }

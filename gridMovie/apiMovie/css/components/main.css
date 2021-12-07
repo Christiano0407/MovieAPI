@@ -29,3 +29,11 @@
   margin-bottom: 1rem;
   border-radius: 1.5rem;
 }
+.poster:hover {
+  filter: grayscale(1);
+  cursor: pointer;
+}
+.poster:active {
+  transform: scale(1.1);
+  transition: ease-in-out;
+}
