@@ -6,7 +6,7 @@
 
 .container {
   width: 90%;
-  max-width: 1000px;
+  /* max-width: 1000px; */
   margin: 4rem auto 10rem auto;
   gap: 1rem;
 
@@ -18,9 +18,10 @@
   text-align: center;
 }
 .container .movie .title {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;
+  color: #fff;
 }
 .container .movie .poster {
   width: 100%;
