@@ -4,6 +4,8 @@ let pages = 1;
 let movies = " ";
 let endMovies;
 
+// = Intersection Observer =
+
 // (A)> Cargar películas>>>>>>>>> =================================== >>>>>
 const addMovies = async () => {
   try {

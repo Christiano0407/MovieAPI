@@ -17,3 +17,14 @@
 .container .movie {
   text-align: center;
 }
+.container .movie .title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.container .movie .poster {
+  width: 100%;
+  min-height: 20rem;
+  margin-bottom: 1rem;
+  border-radius: 1.5rem;
+}
