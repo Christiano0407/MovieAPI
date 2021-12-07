@@ -1,3 +1,40 @@
+/*-------------------------------------*/
+/*Css Components*/
+/*------------------------------------*/
+@import url(/apiMovie/css/components/header.css);
+@import url(/apiMovie/css/components/main.css);
+/*-------------------------------------*/
+/*Css / ROOT*/
+/*------------------------------------*/
+:root {
+  /*Color RGB*/
+  --clr-white: #ffffff;
+  --clr-black: #000000;
+  --clr-back1: #0b0d17;
+  --clr-back2: #d0d6f9;
+  /*Color HSL*/
+  --clr-dark: hsl(230 35% 7%);
+  --clr-light: hsl(231 77% 99%);
+  --clr-hslWhite: hsl(0 0% 100%);
+  /*Font*/
+  /*font-sizes*/
+  --fs-900: 9.375rem;
+  --fs-800: 6.25rem;
+  --fs-700: 3.5rem;
+  --fs-600: 2rem;
+  --fs-500: 1.75rem;
+  --fs-400: 1.125rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+  /*Gap*/
+  --gap: 1rem;
+  /*Font-Families*/
+  /* --font-base: font-family: 'Bellefair', serif; */
+  --font-family: "Poppins", sans-serif;
+}
+/*-------------------------------------*/
+/*Css Style General*/
+/*------------------------------------*/
 *,
 ::before,
 ::after {
@@ -7,4 +44,44 @@
 }
 html {
   font-size: 62.5%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+p {
+  letter-spacing: 1;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+body {
+  width: 100%;
+  /* font-family: "Poppins", sans-serif; */
 }
