@@ -1,0 +1,18 @@
+{
+  "name": "gridmovie",
+  "version": "1.0.0",
+  "description": "project api movies and intersection obsever and grid",
+  "main": "src/js/gridApp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "API",
+    "Movie",
+    "Intersection",
+    "Observer"
+  ],
+  "author": "Chris04",
+  "license": "MIT"
+}
