@@ -40,32 +40,51 @@
 }
 
 /* ==Mobile burger == */
-@media only screen and (max-device-width: 768px) {
+@media (max-width: 768px) {
   .header {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+  }
+  .logo {
+    width: 100px;
+    height: 50px;
   }
   /*Aparezca o desaparezca el menú*/
   .toggle-button {
     display: flex;
+    top: 1.75rem;
   }
   .nav {
     display: none;
     width: 100%;
+    background-color: #333;
+    backdrop-filter: opacity(25%);
   }
   .nav ul {
     width: 100%;
     flex-direction: column;
+    height: 100%;
   }
   .nav ul li {
     text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .nav ul li a {
     padding: 0.5rem 1rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  .nav ul li a:hover {
+    color: gray;
   }
 
   /*With Javascript */
   .nav.active {
     display: flex;
+    height: 20rem;
   }
 }

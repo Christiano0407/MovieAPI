@@ -1,7 +1,15 @@
 console.group("Nav");
-/* const toggleButton = document.getElementsByClassName(`toggle-buttton`)[0] */
-/*  */
+const toggleButton = document.getElementsByClassName(`toggle-button`)[0];
+const navBar = document.getElementsByClassName(`nav`)[0];
+console.log(toggleButton);
+console.log(navBar);
+
+toggleButton.addEventListener(`click`, () => {
+  navBar.classList.toggle(`active`);
+});
+
 console.groupEnd();
+// ================================================================>>>
 console.group("API Documents");
 // API Documentation
 let pages = 1;

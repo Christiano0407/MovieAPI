@@ -8,11 +8,14 @@
 }
 .logo {
   /* margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem); */
-  width: 50px;
+  width: 200px;
   height: 50px;
   /* object-fit: cover; */
   object-fit: contain;
   margin-left: 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .nav {
@@ -38,7 +41,7 @@
 /*= Mobile Burger =*/
 .toggle-button {
   /*Aparecer: display: none */
-  display: none
+  display: none;
   position: absolute;
   top: 0.75rem;
   right: 1rem;
@@ -46,7 +49,7 @@
   justify-content: space-between;
   width: 3rem;
   height: 2rem;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
 }
 .toggle-button .bar {
   height: 3px;
