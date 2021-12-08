@@ -17,6 +17,37 @@
   background-position: center;
   background-size: cover;
 }
+.form {
+  display: flex;
+}
+.form input {
+  width: 90%;
+  position: relative;
+  padding: 1rem 0px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  /*Transfom*/
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: 0.5s;
+  border-bottom: 1px solid #333;
+}
+.form input::placeholder {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.form .fa {
+  position: absolute;
+  /* right: 4rem; */
+  cursor: pointer;
+  color: #ffffff;
+  top: 2.5rem;
+}
+.fa-times {
+  display: none;
+}
 
 .nav {
   height: 100%;

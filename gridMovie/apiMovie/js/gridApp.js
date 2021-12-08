@@ -1,4 +1,9 @@
 console.group("Nav");
+//=========== Search ========= >
+const searchIcon = document.querySelector(`.fa-search`);
+const closeIcon = document.querySelector(`.fa-times`);
+
+//=========== Burger ========= >
 const toggleButton = document.getElementsByClassName(`toggle-button`)[0];
 const navBar = document.getElementsByClassName(`nav`)[0];
 console.log(toggleButton);
