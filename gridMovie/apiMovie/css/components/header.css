@@ -29,9 +29,9 @@
 .nav li {
   list-style: none;
 }
-.nav li:hover {
-  background-color: var(--clr-extraThree);
-}
+/* .nav li:hover { */
+/*   background-color: var(--clr-extraThree); */
+/* } */
 .nav li a {
   color: var(--clr-white);
   text-decoration: none;
