@@ -23,6 +23,7 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
+  filter: opacity(0.7);
 }
 .container .movie .poster {
   width: 100%;

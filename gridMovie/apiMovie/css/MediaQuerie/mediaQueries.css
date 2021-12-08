@@ -44,15 +44,30 @@
   .header {
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-evenly;
   }
   .logo {
     width: 100px;
     height: 50px;
   }
+  .form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form input {
+    width: 50%;
+  }
+  .form .fa {
+    margin-right: 0;
+  }
   /*Aparezca o desaparezca el menú*/
   .toggle-button {
     display: flex;
     top: 1.75rem;
+    width: 2rem;
+    height: 1.5rem;
   }
   .nav {
     display: none;

@@ -2,6 +2,14 @@ console.group("Nav");
 //=========== Search ========= >
 const searchIcon = document.querySelector(`.fa-search`);
 const closeIcon = document.querySelector(`.fa-times`);
+const searchAdd = document.getElementById(`search`);
+
+searchIcon.addEventListener(`click`, () => {
+  searchAdd.classList.add(`expand`);
+});
+closeIcon.addEventListener(`click`, () => {
+  searchAdd.classList.remove(`expand`);
+});
 
 //=========== Burger ========= >
 const toggleButton = document.getElementsByClassName(`toggle-button`)[0];

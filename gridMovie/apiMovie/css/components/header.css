@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
 }
 .logo {
   /* margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem); */
@@ -33,6 +33,17 @@
   transform-origin: right;
   transition: 0.5s;
   border-bottom: 1px solid #333;
+  margin-left: 2rem;
+}
+.form input.expand {
+  transform: scaleX(1);
+  padding: 1rem;
+}
+.form input.expand ~ .fa-search {
+  visibility: hidden;
+}
+.form input.expand ~ .fa-times {
+  display: block;
 }
 .form input::placeholder {
   font-size: 2rem;
@@ -44,6 +55,8 @@
   cursor: pointer;
   color: #ffffff;
   top: 2.5rem;
+  margin-right: 1rem;
+  font-size: 1.5rem;
 }
 .fa-times {
   display: none;
@@ -59,6 +72,7 @@
 }
 .nav li {
   list-style: none;
+  padding: 1rem;
 }
 /* .nav li:hover { */
 /*   background-color: var(--clr-extraThree); */
@@ -66,7 +80,13 @@
 .nav li a {
   color: var(--clr-white);
   text-decoration: none;
-  padding: 1rem;
+  padding: 0.5rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.nav li a:hover {
+  filter: opacity(0.5);
 }
 
 /*= Mobile Burger =*/
