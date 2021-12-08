@@ -1,3 +1,7 @@
+console.group("Nav");
+/* const toggleButton = document.getElementsByClassName(`toggle-buttton`)[0] */
+/*  */
+console.groupEnd();
 console.group("API Documents");
 // API Documentation
 let pages = 1;
@@ -69,3 +73,5 @@ const addMovies = async () => {
   }
 };
 addMovies();
+
+console.groupEnd();

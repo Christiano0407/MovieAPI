@@ -38,3 +38,34 @@
 @media only screen and (min-width: 1824px) {
   /* Styles */
 }
+
+/* ==Mobile burger == */
+@media only screen and (max-device-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  /*Aparezca o desaparezca el menú*/
+  .toggle-button {
+    display: flex;
+  }
+  .nav {
+    display: none;
+    width: 100%;
+  }
+  .nav ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .nav ul li {
+    text-align: center;
+  }
+  .nav ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  /*With Javascript */
+  .nav.active {
+    display: flex;
+  }
+}

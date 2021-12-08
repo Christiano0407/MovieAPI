@@ -1,4 +1,6 @@
 .header {
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -6,4 +8,49 @@
 }
 .logo {
   /* margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem); */
+  width: 50px;
+  height: 50px;
+  /* object-fit: cover; */
+  object-fit: contain;
+  margin-left: 1rem;
+}
+
+.nav {
+  height: 100%;
+}
+.nav ul {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+}
+.nav li {
+  list-style: none;
+}
+.nav li:hover {
+  background-color: var(--clr-extraThree);
+}
+.nav li a {
+  color: var(--clr-white);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+/*= Mobile Burger =*/
+.toggle-button {
+  /*Aparecer: display: none */
+  display: none
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 3rem;
+  height: 2rem;
+  border: 2px solid yellow;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: var(--clr-hslWhite);
+  border-radius: 1rem;
 }
