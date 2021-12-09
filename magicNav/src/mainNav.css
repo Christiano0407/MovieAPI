@@ -116,3 +116,12 @@ body {
   border-radius: 50%;
   box-shadow: -15px 18px #ffffff;
 }
+
+/* Navigation Animation JS*/
+.navigation ul li:nth-child(1).active ~ .indicator {
+  transform: translateX(calc(70px * 0));
+}
+
+.navigation ul li:nth-child(2).active ~ .indicator {
+  transform: translateX(calc(82.5px * 1));
+}
