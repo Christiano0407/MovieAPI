@@ -1,24 +1,24 @@
 console.group("Nav");
 //=========== Search ========= >
-const searchIcon = document.querySelector(`.fa-search`);
-const closeIcon = document.querySelector(`.fa-times`);
-const searchAdd = document.getElementById(`search`);
+/* const searchIcon = document.querySelector(`.fa-search`); */
+/* const closeIcon = document.querySelector(`.fa-times`); */
+/* const searchAdd = document.getElementById(`search`); */
 
-searchIcon.addEventListener(`click`, () => {
-  searchAdd.classList.add(`expand`);
-});
-closeIcon.addEventListener(`click`, () => {
-  searchAdd.classList.remove(`expand`);
-});
+/* searchIcon.addEventListener(`click`, () => { */
+/*   searchAdd.classList.add(`expand`); */
+/* }); */
+/* closeIcon.addEventListener(`click`, () => { */
+/*   searchAdd.classList.remove(`expand`); */
+/* }); */
 
 //=========== Burger ========= >
 const toggleButton = document.getElementsByClassName(`toggle-button`)[0];
 const navBar = document.getElementsByClassName(`nav`)[0];
-console.log(toggleButton);
-console.log(navBar);
+const bar = document.getElementsByClassName("bar");
 
 toggleButton.addEventListener(`click`, () => {
   navBar.classList.toggle(`active`);
+  toggleButton.classList.toggle(`active`);
 });
 
 console.groupEnd();

@@ -42,60 +42,62 @@
 /* ==Mobile burger == */
 @media (max-width: 768px) {
   .header {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    /* display: grid; */
+    /*  grid-template-columns: repeat(8, 1fr); */
+    /*  grid-template-rows: repeat(2, 1fr); */
     /*  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
-    grid-template-areas:
-      "burger burger logo logo  search  search   icon1 icon2"
-      "nsv    nav    nav  nav   nav     nav       nav  nav ";
-    gap: 0.5rem;
+    /*  grid-template-areas: */
+    /*    "burger burger logo logo  search  search   icon1 icon2" */
+    /*    "nsv    nav    nav  nav   nav     nav       nav  nav "; */
+    /*  gap: 0.5rem; */
 
     flex-direction: column;
-    /* align-items: flex-start; */
-    /* justify-content: space-evenly; */
+    align-items: flex-start;
+    justify-content: space-evenly;
   }
-  #img-logo {
-    grid-area: logo;
-  }
+  /* #img-logo { */
+  /*   grid-area: logo; */
+  /* } */
   .logo {
-    width: 100px;
-    height: 50px;
-    grid-area: logo;
+    width: 150px;
+    height: 75px;
+    /* grid-area: logo; */
   }
-  .form {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: search;
-  }
-  .form input {
-    width: 50%;
-  }
-  .form .fa {
-    margin-right: 0;
-  }
+  /* .form { */
+  /*   width: 100%; */
+  /*   display: flex; */
+  /*   justify-content: center; */
+  /*   align-items: center; */
+  /*   grid-area: search; */
+  /* } */
+  /* .form input { */
+  /*   width: 50%; */
+  /* } */
+  /* .form .fa { */
+  /*   margin-right: 0; */
+  /* } */
   /*Aparezca o desaparezca el menú*/
   .toggle-button {
     display: flex;
-    top: 1.75rem;
-    width: 2.5rem;
-    height: 2.5rem;
+    top: 1.5rem;
+    width: 4rem;
+    height: 4rem;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
     padding: 0.5rem;
     border-radius: 0.5rem;
-    grid-area: burger;
+    /* grid-area: burger; */
+    justify-content: space-around;
   }
-  .toggle-button .bar {
-    grid-area: burger;
-  }
+  /* .toggle-button .bar { */
+  /*   grid-area: burger; */
+  /* } */
+
   .nav {
     display: none;
     width: 100%;
     /*   background-color: #333; */
     /*   backdrop-filter: opacity(25%); */
-    grid-area: nav;
+    /* grid-area: nav; */
   }
   .nav ul {
     width: 100%;
@@ -127,6 +129,6 @@
   .nav.active {
     display: flex;
     height: 20rem;
-    grid-area: nav;
+    /* grid-area: nav; */
   }
 }
