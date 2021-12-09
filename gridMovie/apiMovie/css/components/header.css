@@ -98,13 +98,15 @@
   right: 1rem;
   flex-direction: column;
   justify-content: space-between;
-  width: 3rem;
-  height: 2rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
   /* border: 2px solid yellow; */
 }
 .toggle-button .bar {
-  height: 3px;
+  height: 4px;
   width: 100%;
-  background-color: var(--clr-hslWhite);
+  background-color: #18f0ff;
   border-radius: 1rem;
 }

@@ -42,9 +42,14 @@
 /* ==Mobile burger == */
 @media (max-width: 768px) {
   .header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "burger logo search icon1 icon2";
+    gap: 0.5rem;
+
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
+    /* align-items: flex-start; */
+    /* justify-content: space-evenly; */
   }
   .logo {
     width: 100px;
@@ -66,8 +71,11 @@
   .toggle-button {
     display: flex;
     top: 1.75rem;
-    width: 2rem;
-    height: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
   }
   .nav {
     display: none;
