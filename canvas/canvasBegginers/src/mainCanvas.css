@@ -6,3 +6,12 @@
 html {
   font-size: 62.5%;
 }
+
+canvas {
+  position: absolute;
+  background: #333;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+}
