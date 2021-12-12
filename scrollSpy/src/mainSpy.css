@@ -30,11 +30,11 @@ main {
   display: grid;
   grid-template-columns: 30% 70%;
   gap: 2rem;
-  border: 4px solid red;
+  /* border: 4px solid red; */
 }
 
 .enlaces {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   position: sticky;
   top: 2rem;
   background: #fff;
@@ -55,4 +55,36 @@ main {
 }
 .nav a:hover {
   background-color: #ccedff;
+}
+/*.nav a.activo*/
+
+.seccion {
+  padding: 0px 40px 40px 40px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.seccion p {
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  font-weight: 400;
+  color: #414141;
+}
+.seccion br {
+  margin-bottom: 2rem;
+}
+.encabezado {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+.encabezado a {
+  display: inline-flex;
+}
+
+.encabezado a svg {
+  width: 2.6rem;
 }
