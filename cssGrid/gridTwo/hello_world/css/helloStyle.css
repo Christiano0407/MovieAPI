@@ -38,7 +38,7 @@ body {
 main {
   width: 100%;
   margin: 0 auto;
-  height: 90vh;
+  /* height: 90vh; */
   border: 5px solid black;
 }
 .container {
@@ -65,3 +65,42 @@ main {
   width: 100%;
   height: 100%;
 }
+
+/*= Wrapper =*/
+.wrapper {
+  border: 5px solid blue;
+  width: 100%;
+  /* height: 600px; */
+  max-width: 65rem;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+.auto-grid {
+  --auto-grid-min-size: 16rem;
+}
+
+.auto-grid > * {
+  max-width: 400px;
+}
+
+.auto-grid > * + * {
+  margin-top: 1rem;
+}
+
+@supports (display: grid) {
+  .auto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: 1rem;
+  }
+
+  .auto-grid > * {
+    max-width: unset;
+    background-color: yellow;
+    width: 100%;
+    height: 200px;
+  }
+
+  .auto-grid > * + * {
+    margin-top: unset;
+  }
