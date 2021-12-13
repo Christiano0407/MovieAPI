@@ -35,8 +35,33 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-
 main {
   width: 100%;
   margin: 0 auto;
+  height: 90vh;
+  border: 5px solid black;
+}
+.container {
+  width: 90%;
+  max-width: 1000px;
+  height: 50vh;
+  margin: 2rem auto;
+  border: 4px solid red;
+  display: grid;
+  --auto-grid-min-size: 16rem;
+  /* grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--auto-grid-min-size), 1fr)
+  );
+  grid-auto-rows: 1fr;
+  gap: 1rem;
+}
+
+.item {
+  border: 2px solid greenyellow;
+  margin: 0 auto;
+  background: blueviolet;
+  width: 100%;
+  height: 100%;
 }
