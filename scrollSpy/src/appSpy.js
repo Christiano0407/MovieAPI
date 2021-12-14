@@ -1,6 +1,7 @@
 const encabezados = document.querySelectorAll(".contenedor .encabezado");
 const enlaces = document.querySelectorAll("#enlaces a");
 
+// = Para observar =
 const observer = new IntersectionObserver(
   (entradas, observador) => {
     entradas.forEach((entrada) => {
@@ -25,6 +26,7 @@ const observer = new IntersectionObserver(
   }
 );
 
+// = Por cada Encabezado => Ser Observado =
 encabezados.forEach((encabezado) => {
   observer.observe(encabezado);
 });
