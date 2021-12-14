@@ -1,0 +1,19 @@
+{
+  "name": "scrollspy",
+  "version": "1.0.0",
+  "description": "scroll spy javascript vanilla and grid ",
+  "main": "src/appSpy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javscript",
+    "css",
+    "grid",
+    "linux",
+    "vanilla",
+    "code"
+  ],
+  "author": "Chris04",
+  "license": "MIT"
+}
