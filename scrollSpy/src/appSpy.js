@@ -1,14 +1,19 @@
 const encabezados = document.querySelectorAll(".contenedor .encabezado");
 const enlaces = document.querySelectorAll("#enlaces a");
 
+console.log(encabezados);
+console.log(enlaces);
+
 // = Para observar =
 const observer = new IntersectionObserver(
   (entradas, observador) => {
     entradas.forEach((entrada) => {
       if (entrada.isIntersecting) {
-        const id = "#" + entrada.target.id;
+        const id = "#" + entrada.target.id; // => Para ubicar por ID / "#" es para unirlo en la web.
         history.pushState({}, entrada.target.innetText, id);
 
+        // = Para marcar la sección de enlaces => color =
+        // > Por cada enlace.
         enlaces.forEach((enlace) => {
           enlace.classList.remove("activo");
 
@@ -30,3 +35,6 @@ const observer = new IntersectionObserver(
 encabezados.forEach((encabezado) => {
   observer.observe(encabezado);
 });
+
+// history => Barra de direcciones => Api de Javascript.
+//  pushstate => estado / texto / dirección.
