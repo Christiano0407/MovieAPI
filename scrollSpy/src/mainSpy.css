@@ -55,8 +55,15 @@ main {
 }
 .nav a:hover {
   background-color: #ccedff;
+  cursor: pointer;
 }
 /*.nav a.activo*/
+.nav a.activo {
+  font-weight: 700;
+  background: #2062ff;
+  color: #fff;
+  cursor: pointer;
+}
 
 .seccion {
   padding: 0px 40px 40px 40px;
