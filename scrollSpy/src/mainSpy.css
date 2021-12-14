@@ -23,46 +23,43 @@ main {
   width: 100%;
   margin: 0 auto;
 }
-.container {
+.contenedor {
   width: 90%;
   max-width: 1000px;
-  margin: 2rem auto;
+  margin: 20px auto;
   display: grid;
   grid-template-columns: 30% 70%;
-  gap: 2rem;
-  /* border: 4px solid red; */
+  gap: 20px;
 }
 
 .enlaces {
-  /* border: 2px solid blue; */
   position: sticky;
-  top: 2rem;
+  top: 20px;
   background: #fff;
-  padding: 2rem;
-  border-radius: 0.5rem;
+  padding: 20px;
+  border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 10px;
 }
+
 .nav a {
   display: block;
   text-decoration: none;
-  padding: 1rem 2rem;
-  border-radius: 0.3rem;
-  color: #2062ff;
-  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: #2063ff;
 }
+
 .nav a:hover {
-  background-color: #ccedff;
-  cursor: pointer;
+  background: #ccedff;
 }
-/*.nav a.activo*/
+
 .nav a.activo {
   font-weight: 700;
-  background: #2062ff;
+  background: #2063ff;
   color: #fff;
-  cursor: pointer;
 }
 
 .seccion {
@@ -72,26 +69,33 @@ main {
   background: #fff;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
+
 .seccion p {
-  font-size: 1.6rem;
-  line-height: 3.2rem;
+  font-size: 16px;
+  line-height: 32px;
   font-weight: 400;
   color: #414141;
 }
+
 .seccion br {
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
 }
+
 .encabezado {
   display: flex;
   align-items: center;
   font-weight: 700;
-  padding-top: 2rem;
-  margin-bottom: 2rem;
+  padding-top: 20px;
+  margin-bottom: 20px;
 }
+
 .encabezado a {
   display: inline-flex;
+  align-items: center;
+  margin-left: 10px;
 }
 
 .encabezado a svg {
-  width: 2.6rem;
+  width: 26px;
+  height: 26px;
 }
