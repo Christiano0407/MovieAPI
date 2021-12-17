@@ -76,6 +76,20 @@ body {
     color: #ffffff;
     font-size: 2rem;
   }
+
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .flex .flex-1 {
+    flex: 1 1 150px;
+    margin: 5px;
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    border-radius: 1rem;
+  }
 }
 /* =================================== Con CSS GRID ====================================================== */
 .sectionTwo {
@@ -118,6 +132,19 @@ body {
     color: #ffffff;
     font-size: 2rem;
   }
+
+  .Newcuadro {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .idCuadro {
+    width: 150px;
+    height: 150px;
+    border-radius: 1rem;
+    background: red;
+  }
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Segundo Proyecto <<<<<<<<<<<<<<<<<<<<<<<<<<< */
@@ -128,4 +155,24 @@ body {
   margin: 5rem auto;
 }
 @media (max-width: 768px) {
+}
+
+/* = Section Four = */
+.sectionFour {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 80vh;
+  border: 5px solid pink;
+  padding: 1rem;
+}
+.fourPlay {
+  display: grid;
+  grid-template-columns: minmax(150px, 25%) 1fr;
+  gap: 1rem;
+  border: 2px solid violet;
+}
+.fourPlay .div {
+  background-color: red;
+  height: 250px;
+  border-radius: 1rem;
 }
