@@ -204,3 +204,43 @@ body {
   background: orangered;
   height: 100px;
 }
+
+/* = Section SIX = */
+.conteinerSix {
+  width: 100%;
+  margin: 2rem auto;
+  height: 50vh;
+  border: 5px solid yellow;
+}
+.six {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+}
+.sixPlus {
+  grid-column: 1 / 13;
+  grid-row: 1 / 3;
+  background-color: blue;
+}
+
+/* = Section Seven = */
+.conteinerSeven {
+  width: 100%;
+  margin: 2rem auto;
+  height: 50vh;
+  border: 5px solid black;
+}
+.seven {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+}
+.sevenPlus {
+  background-color: red;
+}
