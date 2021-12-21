@@ -8,7 +8,41 @@
     <title>Music Reproductor | Song Player Grid</title>
   </head>
   <body>
-    <main></main>
+    <main>
+      <div class="music-container">
+        <div class="title-music">
+          <h2 class="song-Title">Title</h2>
+          <span class="sing-author">Diamond Eyes</span>
+        </div>
+        <div class="controls-music__container">
+          <div class="progress-song__container">
+            <div class="progress-bar">
+              <span class="progress"></span>
+            </div>
+          </div>
+          <div class="time-container">
+            <span class="time-left" id="CurrentSongTime"></span>
+            <span class="time-left" id="SongLength"></span>
+          </div>
+        </div>
+        <audio src=""></audio>
+        <div class="main-song__controls">
+          <img
+            src="/src/img/Backward.svg"
+            alt="backward"
+            class="icon"
+            id="back10"
+          />
+          <img src="/src/img/Play.svg" alt="play" class="icon" id="playPause" />
+          <img
+            src="/src/img/Forward.svg"
+            alt="foward"
+            class="icon"
+            id="plus10"
+          />
+        </div>
+      </div>
+    </main>
 
     <script src="/src/appMusic.js"></script>
   </body>
