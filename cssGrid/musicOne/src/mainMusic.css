@@ -112,3 +112,20 @@ main {
   padding: 0.5rem;
 }
 /*Controls Play*/
+.main-song__controls {
+  height: 3rem;
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.icon {
+  height: 100%;
+  width: auto;
+  opacity: 0.6;
+  cursor: pointer;
+  background: #2196f3;
+  padding: 0.5rem;
+  border-radius: 5rem;
+}
