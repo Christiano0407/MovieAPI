@@ -132,7 +132,11 @@ main {
 }
 .icon:hover {
   background: #fff;
+  opacity: 0.5;
 }
 .icon:active {
   transform: scale(0.9);
+}
+audio {
+  display: none;
 }
