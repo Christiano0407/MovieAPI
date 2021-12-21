@@ -44,3 +44,71 @@ main {
   align-items: center;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.35);
 }
+.title-music {
+  width: 80%;
+  height: 80%;
+  width: fit-content;
+  color: #fff;
+  margin-right: auto;
+  margin-left: 10%;
+  padding: 0.5rem;
+}
+.song-Title {
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+  padding: 0.5rem;
+}
+.sing-author {
+  margin-top: 0.1rem;
+  font-size: 1.2rem;
+  color: rgb(167, 167, 167);
+  letter-spacing: 0.1px;
+  padding: 0.5rem;
+}
+.controls-music__container {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+/*Progress Bar*/
+.progress-song__container {
+  margin-top: 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.progress-bar {
+  height: 0.3rem;
+  border-radius: 0.3rem;
+  width: 100%;
+  background-color: rgb(102, 102, 102);
+  position: relative;
+}
+.progress {
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  border-radius: 0.3rem;
+  background: #fff;
+}
+/*Time*/
+.time-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(167, 167, 167);
+  font-size: 1.2rem;
+}
+.time-left {
+  margin-top: 0.3rem;
+  padding: 0.5rem;
+}
+/*Controls Play*/
