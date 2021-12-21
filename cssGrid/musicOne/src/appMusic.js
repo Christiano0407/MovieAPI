@@ -4,7 +4,7 @@ console.log(audio);
 const songLength = document.getElementById(`SongLength`);
 const currentTime = document.getElementById(`CurrentSongTime`);
 
-// Calculate Time
+// Calculate Time o medir tiempo ==>
 const calculateTime = (secs) => {
   const minutes = Math.floor(secs / 60),
     seconds = Math.floor(secs % 60),
