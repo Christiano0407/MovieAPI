@@ -50,6 +50,7 @@ main {
   display: flex;
   will-change: transform;
   background-color: black;
+  gap: 0.5rem;
 }
 .slider-item {
   position: relative;
