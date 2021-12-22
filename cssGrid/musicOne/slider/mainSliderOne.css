@@ -31,7 +31,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 1rem;
+  margin: 2rem auto;
 }
 .headerLogo {
   width: 12rem;
