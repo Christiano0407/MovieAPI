@@ -1,3 +1,11 @@
+:root {
+  --colorOne: #141414;
+  --colorTwo: #5c5c5c;
+  --colorWhite: #e5e5e5;
+
+  --tileBorderRadius: 4px;
+}
+
 *,
 *::before,
 *::after {
@@ -16,4 +24,30 @@ a {
 }
 body {
   width: 100%;
+  background-color: var(--colorOne);
+}
+header {
+  padding: 0 2%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+.headerLogo {
+  width: 12rem;
+  padding: 0.5rem;
+}
+main {
+  width: 100%;
+  margin: 2rem auto;
+}
+.thumbSection {
+  color: #fff;
+  padding-top: 3%;
+}
+.thumbTitle {
+  font-size: 1.6rem;
+  line-height: 14px;
+  font-weight: 500;
+  margin: 0 4% 1.2rem;
 }
