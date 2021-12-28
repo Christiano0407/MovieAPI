@@ -45,6 +45,32 @@
 /*   height: 5px; */
 /*   background: red; */
 /* } */
+
+.cuadradoTwo {
+  width: 100px;
+  height: 100px;
+  background: green;
+  margin: 2rem 2rem;
+
+  animation: trance 1s 1s backwards;
+}
+
+.circles {
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  border-radius: 50%;
+  margin: 2rem 0;
+
+  animation-name: one-plus;
+  animation-duration: 1s;
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+}
+
+/*Keyframes Animation*/
+
 @keyframes animate-fade {
   0% {
     transform: translateX(0);
@@ -53,5 +79,44 @@
   100% {
     opacity: 1;
     transform: translateX(800px);
+  }
+}
+
+@keyframes trance {
+  0% {
+    transform: translateX(0) rotate(0);
+    filter: brightness(3);
+  }
+  50% {
+    transform: translateX(1000px) rotate(180deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0);
+    filter: brightness(1);
+  }
+}
+
+@keyframes one-plus {
+  0% {
+    opacity: 0;
+    filter: brightness(3) saturate(3);
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(1) saturate(1);
+    transform: scale(1, 1);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .animate {
+    animation: none !important;
+  }
+  .cuadradoTwo {
+    animation: none !important;
+  }
+  .circle {
+    animation: none !important;
   }
 }
