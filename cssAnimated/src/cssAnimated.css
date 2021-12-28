@@ -1,5 +1,6 @@
 /*Modules CSS*/
 @import url(/src/animated01.css);
+@import url(/src/keyframes.css);
 /*root*/
 :root {
   --clr-white: #fff;

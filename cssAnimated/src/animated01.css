@@ -69,54 +69,19 @@
   animation-timing-function: ease-out;
 }
 
-/*Keyframes Animation*/
+.title-one {
+  margin: 2rem 2rem;
+  font-weight: 600;
+  font-size: 4rem;
 
-@keyframes animate-fade {
-  0% {
-    transform: translateX(0);
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(800px);
-  }
+  animation-name: titles;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
 }
 
-@keyframes trance {
-  0% {
-    transform: translateX(0) rotate(0);
-    filter: brightness(3);
-  }
-  50% {
-    transform: translateX(1000px) rotate(180deg);
-  }
-  100% {
-    transform: translateX(0) rotate(0);
-    filter: brightness(1);
-  }
-}
-
-@keyframes one-plus {
-  0% {
-    opacity: 0;
-    filter: brightness(3) saturate(3);
-    transform: scale(0.8, 0.8);
-  }
-  100% {
-    opacity: 1;
-    filter: brightness(1) saturate(1);
-    transform: scale(1, 1);
-  }
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .animate {
-    animation: none !important;
-  }
-  .cuadradoTwo {
-    animation: none !important;
-  }
-  .circle {
-    animation: none !important;
-  }
+.title-one .pop {
+  animation-name: animate-pop;
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.4);
+  animation-delay: 0.6s;
 }
