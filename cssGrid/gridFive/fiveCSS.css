@@ -29,3 +29,21 @@ body {
   margin: 0 auto;
   background-color: #ffffff;
 }
+/* @supports (display: grid;) { */
+/*   main { */
+/*     width: 100%; */
+/*     height: 50vh; */
+/*     margin: 2rem auto; */
+/*     display: grid; */
+/*     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+/*     border: 5px solid red; */
+/*   } */
+/* } */
+/* main { */
+/*   width: 100%; */
+/*   height: 50vh; */
+/*   margin: 2rem auto; */
+/*   display: grid; */
+/*   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+/*   border: 5px solid red; */
+/* } */
