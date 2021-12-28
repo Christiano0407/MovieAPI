@@ -1,0 +1,99 @@
+/*root*/
+:root {
+  --clr-white: #fff;
+  --clr-black: #000;
+}
+
+/*=General =*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  width: 100%;
+  line-height: 1.5;
+}
+/* Slide In */
+.cuadrado {
+  margin: 2rem 2rem;
+  width: 100px;
+  height: 100px;
+  background: hotpink;
+  border-radius: 1rem;
+
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+  animation-name: animate-slide;
+}
+/* Slide In */
+@keyframes animate-slide {
+  0% {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+/* Drop In */
+.drop {
+  margin: 3rem 2rem;
+  width: 100px;
+  height: 100px;
+  background: black;
+  border-radius: 1rem;
+
+  animation-name: animate-drop;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: cubic-bezier(0.77, 0.14, 0.91, 1.25);
+}
+
+@keyframes animate-drop {
+  0% {
+    opacity: 0;
+    transform: translate(0, -300px) scale(0.9, 1.1);
+  }
+  95% {
+    opacity: 1;
+    transform: translate(0, 0) scale(0.9, 1.1);
+  }
+  96% {
+    opacity: 1;
+    transform: translate(10px, 0) scale(1.2, 0.9);
+  }
+  97% {
+    opacity: 1;
+    transform: translate(-10px, 0) scale(1.2, 0.9);
+  }
+  98% {
+    opacity: 1;
+    transform: translate(5px, 0) scale(1.1, 0.9);
+  }
+  99% {
+    opacity: 1;
+    transform: translate(-5px, 0) scale(1.1, 0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1, 1);
+  }
+}
+
+/* Animation Delays */

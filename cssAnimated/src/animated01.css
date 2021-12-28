@@ -124,8 +124,26 @@
   margin: 2rem 2rem;
 
   animate-name: animate-grow;
-  -o-animation-timing-function: ease;
+  /* animation-timing-function: ease; */
   animation-duration: 0.75s;
   animation-delay: 0.5s;
   animation-fill-mode: backwards;
+}
+.pacman {
+  margin: 3rem 2rem;
+  width: 0px;
+  height: 0px;
+  border-right: 60px solid transparent;
+  border-top: 60px solid green;
+  border-left: 60px solid green;
+  border-bottom: 60px solid green;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+  animation-name: pacman-splat;
 }
