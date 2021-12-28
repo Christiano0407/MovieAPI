@@ -18,3 +18,40 @@
 /*   transform: scale(1.5); */
 /*   background: black; */
 /* } */
+.circle {
+  width: 100px;
+  height: 100px;
+  background: black;
+  border-radius: 50%;
+  margin: 2rem 0;
+
+  animation-name: animate-fade;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+/* .circle::before { */
+/*   content: " "; */
+/*   border: 2px solid greenyellow; */
+/*   width: 15px; */
+/*   height: 5px; */
+/*   background: yellow; */
+/*   margin-left: 5rem; */
+/* } */
+/* .circle::after { */
+/*   content: " "; */
+/*   border: 2px solid coral; */
+/*   width: 15px; */
+/*   height: 5px; */
+/*   background: red; */
+/* } */
+@keyframes animate-fade {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(800px);
+  }
+}
