@@ -24,4 +24,48 @@ body {
 body {
   width: 100%;
   line-height: 1.5;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #25272c;
+}
+.container {
+  background-color: #eb5bec;
+  width: 315px;
+  height: 385px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 16px;
+}
+.container::after {
+  content: " ";
+  background-image: url("https://assets.codepen.io/9632/dolby-atmos.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.content {
+  color: #fff;
+  position: relative;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  top: 6rem;
+  z-index: 2;
+}
+.content h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 0 auto;
+}
+.content p {
+  margin: 0 auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+  filter: opacity(0.5);
 }
