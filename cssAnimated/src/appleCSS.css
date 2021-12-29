@@ -1,0 +1,27 @@
+/*root*/
+:root {
+  --clr-white: #fff;
+  --clr-black: #000;
+}
+
+/*=General =*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  width: 100%;
+  line-height: 1.5;
+}

@@ -96,4 +96,67 @@ body {
   }
 }
 
+/*Rectangle*/
+.rectangle {
+  width: 200px;
+  height: 100px;
+  background: lightseagreen;
+  margin: 2rem 2rem;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+}
+.rectangle.plus {
+  animation-name: onePlus;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+@keyframes onePlus {
+  0% {
+    transform: translateX(0) scale(0);
+  }
+  50% {
+    transform: translateX(500px) scale(50%);
+  }
+  75% {
+    transform: translateX(800px) scale(25%);
+  }
+  100% {
+    transform: translateX(0) scale(0);
+  }
+}
+
+/*Circle*/
+.circle {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  outline: none;
+  border: none;
+  margin: 2rem 2rem;
+  border-radius: 50%;
+}
+.circle.animation {
+  animation-name: circle-animated;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+@keyframes circle-animated {
+  0% {
+    transform: translateX(0px) rotate(0deg) scaleX(0);
+  }
+  50% {
+    transform: translateX(500px) rotate(90deg) scaleX(1.5);
+  }
+  75% {
+    transform: translateX(750px) rotate(180deg) scaleX(2);
+  }
+  100% {
+    transform: translateX(0px) rotate(0deg) scaleX(0);
+  }
+}
+
 /* Animation Delays */
