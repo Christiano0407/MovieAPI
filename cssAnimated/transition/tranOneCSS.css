@@ -57,6 +57,7 @@ section {
   transition: transform 250ms;
   transition-timing-function: linear;
   /* transition: transform 250ms linear; */
+  will-change: transform; /*CPU e GPU*/
 }
 .btn:hover {
   transform: translateY(-15px) scale(1.5);
