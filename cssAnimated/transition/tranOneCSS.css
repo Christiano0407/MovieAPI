@@ -32,9 +32,10 @@ main {
 section {
   width: 100%;
   border: 4px solid red;
-  height: 400px;
+  height: 250px;
   display: grid;
   place-items: center;
+  margin: 2rem auto;
 }
 .btn {
   margin: 2rem 2rem;
@@ -50,11 +51,41 @@ section {
   border: none;
   outline: none;
   cursor: pointer;
+  /* ==== ANIMATION ==== */
   /*  All of the base styles have
       moved to the “CSS” tab above.*/
-  transition: transform 250ms, opacity: 400ms;
+  transition: transform 250ms;
+  transition-timing-function: linear;
+  /* transition: transform 250ms linear; */
 }
 .btn:hover {
   transform: translateY(-15px) scale(1.5);
-  opacity: 0;
+  /* opacity: 0; */
+}
+
+/*Two*/
+.two {
+  background: black;
+  transition: transform: 300ms ease-out; /* = Elementos vienen de afuera =*/
+}
+.two:hover {
+    transform: translateY(-20px);
+}
+
+/*Three*/
+.three {
+    background: blueviolet;
+    transition: transform: 200ms ease-in; 
+}
+.three:hover  {
+    transform: translateY(-30px);
+}
+
+/*Four*/
+.four {
+    background: crimson;
+    transition: transform: 250ms ease-in-out; /*Tiene la misma cantidad de aceleración y desaceleración.*/
+}
+.four:hover {
+    transform: translateY(-70px);
 }
