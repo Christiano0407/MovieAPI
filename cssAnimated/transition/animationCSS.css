@@ -123,3 +123,36 @@ section {
     transform: rotate(1turn);
   }
 }
+
+.spin-two {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.spin-two img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.spinnerTwo {
+  animation: fancy-spin 2000ms;
+  animation-iteration-count: infinite;
+}
+@keyframes fancy-spin {
+  0% {
+    transform: rotate(0turn) scale(1);
+  }
+  25% {
+    transform: rotate(1turn) scale(1);
+  }
+  50% {
+    transform: rotate(1turn) scale(1.5);
+  }
+  75% {
+    transform: rotate(0turn) scale(1.5);
+  }
+  100% {
+    transform: rotate(0turn) scale(1);
+  }
+}
