@@ -25,6 +25,101 @@ body {
   width: 100%;
 }
 
+main {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+section {
+  width: 100%;
+  border: 4px solid red;
+  height: 250px;
+  margin: 1rem auto;
+}
+/*Box*/
+.box {
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  margin: 1rem 1rem;
+}
+.box.one {
+  animation: slide-in 1000ms ease-in-out;
+}
+/*Box Animation*/
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/*Two*/
+.two {
+  animation: drop-in 1000ms;
+  background-color: royalblue;
+}
+@keyframes drop-in {
+  from {
+    transform: rotate(-30deg) translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0deg) translateY(0%);
+    opacity: 1;
+  }
+}
+
+/*Three*/
+.three {
+  animation: slide-on 1000ms;
+  animation-iteration-count: 3;
+  background-color: springgreen;
+}
+@keyframes slide-on {
+  from {
+    transform: translateX(-100%);
+    opacity: 0.25;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
 /*Animation Active or not*/
 @media (prefers-reduced-motion: reduce) {
+  .box {
+    transition: none;
+  }
+}
+
+.spin-one {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.spin-one img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.spinner {
+  animation: spin 1000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
 }
