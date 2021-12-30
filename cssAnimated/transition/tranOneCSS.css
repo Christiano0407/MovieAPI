@@ -104,6 +104,7 @@ section {
   background: green;
   transition: transform: 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.six:hover {
+.six:hover, 
+.six:focus {
   transform: translateY(50px);
 }
