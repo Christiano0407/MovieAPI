@@ -1,3 +1,7 @@
+/*Import*/
+@import url(/src/css/keyframeOne.css);
+
+/*General Project*/
 *,
 *::before,
 *::after {
@@ -8,4 +12,36 @@
 html {
   font-size: 62.5%;
   background: aliceblue;
+}
+html::before {
+  content: " ";
+  animation: First 15s forwards infinite;
+  background-color: #fec8d8;
+  clip-path: circle(75vmax at center center);
+  height: 100vmax;
+  position: absolute;
+  width: 100vmax;
+  left: calc((-100vmax + 100%) / 2);
+  top: calc((-100vmax + 100%) / 2);
+}
+body {
+  animation: Second 15s forwards infinite;
+  height: 100vmax;
+  width: 100vmax;
+  position: absolute;
+  margin: 0;
+  background-color: #d291bc;
+  clip-path: circle(75vmax at center center);
+  left: calc((-100vmax + 100%) / 2);
+  top: calc((-100vmax + 100%) / 2);
+}
+html::after {
+  content: " ";
+  animation: Third 15s forwards infinite;
+  background-color: #985dad;
+  height: 100vmax;
+  width: 100vmax;
+  position: absolute;
+  left: calc((-100vmax + 100%) / 2);
+  top: calc((-100vmax + 100%) / 2);
 }
