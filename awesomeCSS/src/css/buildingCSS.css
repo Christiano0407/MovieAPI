@@ -63,3 +63,7 @@ body {
   animation-name: bounce-1;
   animation-timing-function: ease;
 }
+.bounce-2 {
+  animation-name: bounce-2;
+  animation-timing-function: ease-out;
+}
