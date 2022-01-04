@@ -81,3 +81,8 @@ h2 {
   animation-name: bounce-3;
   animation-timing-function: ease-in;
 }
+
+.circle {
+  transform: translate(50%, -50%) rotate(0deg);
+  transform-origin: center;
+}
