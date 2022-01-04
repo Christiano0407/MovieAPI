@@ -1,0 +1,16 @@
+@keyframes float1 {
+  from {
+    transform: translateX(-70px);
+  }
+  to {
+    transform: translateX(70px);
+  }
+}
+@keyframes float2 {
+  from {
+    transform: translateX(90px);
+  }
+  to {
+    transform: translateX(-90px);
+  }
+}
