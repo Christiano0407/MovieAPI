@@ -86,3 +86,44 @@ h2 {
   transform: translate(50%, -50%) rotate(0deg);
   transform-origin: center;
 }
+/*Main*/
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.main::before,
+.main::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  z-index: -3;
+}
+.main::before {
+  content: " ";
+  right: 0;
+  top: 0;
+  /* bottom: -19; */
+  height: 30em;
+  width: 30em;
+  border-radius: 30em;
+  z-index: 100;
+  /* background: linear-gradient(var(--clr-blue), var(--clr-pruple)); */
+  background-image: linear-gradient(to top, #8a15ff 0%, #fbc2eb 100%);
+  align-self: flex-end;
+  animation: gradient-fade 8s ease-in-out 3s infinite alternate;
+}
+.main::after {
+  content: " ";
+  height: 30em;
+  width: 30em;
+  border-radius: 30em;
+  background-image: linear-gradient(to top, #a18cd1 0%, #15e0ff 100%);
+  left: 20;
+  animation: gradient-fade-alt 6s ease-in-out 3s infinite alternate;
+}
