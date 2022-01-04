@@ -127,3 +127,31 @@ h2 {
   left: 20;
   animation: gradient-fade-alt 6s ease-in-out 3s infinite alternate;
 }
+.main__text-wrapper {
+  position: relative;
+  padding: 1rem;
+}
+.main__text-wrapper::before,
+.main__text-wrapper::after {
+  content: " ";
+  display: block;
+  position: absolute;
+}
+.main__title {
+  font-size: 6rem;
+  margin-bottom: 0.2rem;
+  font-weight: bold;
+}
+h2 {
+  font-size: 3rem;
+  filter: saturate(0.5);
+}
+.dotted-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.3;
+  animation: rotation 38s linear infinite;
+  border-radius: 50%;
+  background: linear-gradient(to top, #d000c5 0%, #000 100%);
+}
