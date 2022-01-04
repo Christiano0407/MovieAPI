@@ -30,6 +30,13 @@ body {
   text-align: center;
   font-weight: 500;
 }
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+h2 {
+  font-size: 2em;
+}
 .geo-arrow {
   fill: none;
   stroke: #fff;
@@ -45,7 +52,10 @@ body {
   top: 0;
   left: -3em;
 }
-
+.arrow-bottom {
+  bottom: 0;
+  right: 3em;
+}
 /*Animation*/
 .draw-in {
   stroke-dasharray: 1000;
@@ -66,4 +76,8 @@ body {
 .bounce-2 {
   animation-name: bounce-2;
   animation-timing-function: ease-out;
+}
+.bounce-3 {
+  animation-name: bounce-3;
+  animation-timing-function: ease-in;
 }
