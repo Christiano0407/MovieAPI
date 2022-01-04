@@ -14,3 +14,18 @@
     transform: translateX(-90px);
   }
 }
+@keyframes twinkle {
+  to {
+    background-color: deeppink;
+  }
+}
+@keyframes excite1 {
+  to {
+    transform: rotateZ(-5deg);
+  }
+}
+@keyframes excite2 {
+  to {
+    transform: rotateZ(5deg);
+  }
+}
