@@ -1,0 +1,65 @@
+/*Import*/
+@import url(/src/css/buildKeyframe.css);
+
+/* = General Style = */
+:root {
+  --clr-white: #fff;
+  --clr-black: #000;
+  --clr-purple: #8a15ff;
+  --clr-blue: #3800e7;
+  --clr-ltBlue: #15e0ff;
+  --clr-magenta: #d000c5;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "DM Mono", monospace;
+  background: linear-gradient(var(--clr-blue), var(--clr-purple));
+  height: 100vh;
+  overflow: hidden;
+  color: var(--clr-white);
+  text-align: center;
+  font-weight: 500;
+}
+.geo-arrow {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 4;
+  stroke-miterlimit: 10;
+}
+.arrow {
+  z-index: 1000;
+  opacity: 0.5;
+  position: absolute;
+}
+.arrow-top {
+  top: 0;
+  left: -3em;
+}
+
+/*Animation*/
+.draw-in {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 10;
+  animation: draw 15s ease-in-out alternate infinite;
+}
+
+/*Item*/
+.item-to {
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+.bounce-1 {
+  animation-name: bounce-1;
+  animation-timing-function: ease;
+}
