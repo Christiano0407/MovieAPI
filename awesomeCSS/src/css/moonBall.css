@@ -275,3 +275,25 @@ body {
   right: 180px;
   animation: spray 3s ease-out infinite;
 }
+.drop::before {
+  content: " ";
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: var(--clr-purple);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: spray 3s 0.3s ease-out infinite;
+}
+.drop::after {
+  content: " ";
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: var(--clr-purple);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: spray 3s 07s ease-out infinite;
+}
