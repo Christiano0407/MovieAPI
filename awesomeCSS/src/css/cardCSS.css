@@ -1,0 +1,28 @@
+/* = General Style = */
+:root {
+  --clr-white: #fff;
+  --clr-black: #000;
+  --clr-purple: #8a15ff;
+  --clr-blue: #3800e7;
+  --clr-ltBlue: #15e0ff;
+  --clr-magenta: #d000c5;
+  --clr-card: #3c3163;
+  --transition-time: 0.5s;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+}
