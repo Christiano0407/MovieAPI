@@ -40,3 +40,14 @@
     transform: translateY(0);
   }
 }
+@keyframes blink {
+  0% {
+    transform: scaleY(0.1);
+  }
+  5% {
+    transform: scaleY(0.1);
+  }
+  5.1% {
+    transform: scaleY(1);
+  }
+}
