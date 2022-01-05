@@ -6,8 +6,11 @@
   --clr-blue: #3800e7;
   --clr-ltBlue: #15e0ff;
   --clr-magenta: #d000c5;
+  --clr-whiteOne: #fef8f8;
+
   --clr-card: #3c3163;
   --transition-time: 0.5s;
+  --curve: 40;
 }
 
 *,
@@ -20,9 +23,52 @@
 html {
   font-size: 62.5%;
 }
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 500px;
+  height: 250px;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 body {
+  width: 100%;
+  margin: a auto;
+  background: #fef8f8;
+}
+main {
   width: 100%;
   height: 100vh;
   margin: 0 auto;
   overflow: hidden;
+  border: 4px solid black;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-flow: column;
+  grid-auto-rows: 1fr;
+  gap: 1rem;
+  padding: 0;
+  margin: 0 auto;
+}
+.card {
+  position: relative;
+  display: block;
+  height: 100vh;
+  border-radius: calc(var(--curve) * 1px);
+}
+.card__image {
+  width: 100%;
+  object-fit: cover;
+}
+.card__image img {
+  width: 100%;
+  object-fit: cover;
 }
