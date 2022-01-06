@@ -53,11 +53,11 @@ i {
 }
 .container {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   /*  max-height: 850px; */
   /*  max-width: 1280px; */
   /*  min-width: 1000px; */
-  margin: 0 auto;
+  margin: 2rem auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-auto-flow: row;
@@ -135,7 +135,7 @@ i {
   object-fit: cover;
 }
 .card3:hover {
-  background: url(../assets/img/three.jpg) left center no-repeat;
+  background: url(../assets/img/three.jpg) left top no-repeat;
   background-size: 600px;
 }
 .card3 .title {
