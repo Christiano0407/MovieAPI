@@ -1,0 +1,51 @@
+/* = General Style = */
+:root {
+  --clr-white: #fff;
+  --clr-black: #000;
+  --clr-purple: #8a15ff;
+  --clr-blue: #3800e7;
+  --clr-ltBlue: #15e0ff;
+  --clr-magenta: #d000c5;
+  --clr-whiteOne: #fef8f8;
+
+  --clr-card: #3c3163;
+  --transition-time: 0.5s;
+  --curve: 40;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background: #fef8f8;
+  font-family: "DM Mono", monospace;
+}
+main {
+  width: 100%;
+  height: 50vh;
+  margin: 3rem auto;
+  border: 4px solid black;
+  background-color: #3c3163;
+}
