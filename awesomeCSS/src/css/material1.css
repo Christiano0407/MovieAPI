@@ -91,6 +91,10 @@ i {
 }
 .card1 .title {
   opacity: 0;
+  color: #fff;
+  transition: opacity 1s;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
 }
 .card1 .title:hover {
   opacity: 1;
@@ -115,6 +119,10 @@ i {
 }
 .card2 .title {
   opacity: 0;
+  color: #fff;
+  transition: opacity 1s;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
 }
 .card2:hover,
 .title {
@@ -140,6 +148,10 @@ i {
 }
 .card3 .title {
   opacity: 0;
+  color: #fff;
+  transition: opacity 1s;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
 }
 .card3,
 .title:hover {
