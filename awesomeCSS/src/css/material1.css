@@ -1,0 +1,169 @@
+/* = General Style = */
+:root {
+  --clr-white: #fff;
+  --clr-black: #000;
+  --clr-purple: #8a15ff;
+  --clr-blue: #3800e7;
+  --clr-ltBlue: #15e0ff;
+  --clr-magenta: #d000c5;
+  --clr-whiteOne: #fef8f8;
+
+  --clr-card: #3c3163;
+  --transition-time: 0.5s;
+  --curve: 40;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 500px;
+  height: 250px;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body {
+  width: 100%;
+  margin: 0 auto;
+  background: #fef8f8;
+  font-family: "DM Mono", monospace;
+}
+main {
+  width: 100%;
+  margin: 2rem auto;
+  border: 4px solid black;
+}
+i {
+  font-size: 1.2rem;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  /*  max-height: 850px; */
+  /*  max-width: 1280px; */
+  /*  min-width: 1000px; */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-flow: row;
+  grid-auto-rows: 1fr;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+}
+.card {
+  height: 379px;
+  width: 300px;
+  background: #808080;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: background 1s;
+  background: #000;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  position: relative;
+}
+.card1 {
+  background: url(../assets/img/one.jpg) center center no-repeat;
+  background-size: 300px;
+  object-fit: cover;
+}
+.card1:hover {
+  background: url(../assets/img/one.jpg) left center no-repeat;
+  background-size: 600px;
+}
+.card1 .title {
+  opacity: 0;
+}
+.card1 .title:hover {
+  opacity: 1;
+  color: #fff;
+}
+.card1 i {
+  opacity: 0;
+}
+.card:hover i {
+  opacity: 1;
+  color: #fff;
+}
+
+.card2 {
+  background: url(../assets/img/two.jpg) center center no-repeat;
+  background-size: 300px;
+  object-fit: cover;
+}
+.card2:hover {
+  background: url(../assets/img/two.jpg) left center no-repeat;
+  background-size: 600px;
+}
+.card2 .title {
+  opacity: 0;
+}
+.card2:hover,
+.title {
+  opacity: 1;
+  color: #fff;
+}
+.card2 i {
+  opacity: 0;
+}
+.card2:hover i {
+  opacity: 1;
+  color: #fff;
+}
+
+.card3 {
+  background: url(../assets/img/three.jpg) center center no-repeat;
+  background-size: 300px;
+  object-fit: cover;
+}
+.card3:hover {
+  background: url(../assets/img/three.jpg) left center no-repeat;
+  background-size: 600px;
+}
+.card3 .title {
+  opacity: 0;
+}
+.card3,
+.title:hover {
+  opacity: 1;
+  color: #fff;
+}
+.card3 i {
+  opacity: 0;
+}
+.card3:hover i {
+  opacity: 1;
+  color: #fff;
+}
+
+.border {
+  height: 360px;
+  width: 290px;
+  background: transparent;
+  border-radius: 1rem;
+  transition: border 1s;
+  position: relative;
+  padding: 1rem;
+  margin: 0 auto;
+}
+.border:hover {
+  border: 1px solid #fff;
+}
