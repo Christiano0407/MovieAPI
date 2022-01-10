@@ -9,13 +9,16 @@
 /*   actionBtn.classList.toggle(`active`); */
 /* } */
 /* console.groupEnd; */
+console.group("Btn Click");
 
 function actionToggle() {
   const action = document.querySelector(".action-btn");
   action.classList.toggle("active");
 }
 
-function actionToggles() {
-  const actions = document.getElementById("actionBtn");
-  actions.classList.toggle("active");
+function actionToggless() {
+  const action = document.querySelector(".action-btn");
+  action.classList.toggle("active");
 }
+
+console.groupEnd();
