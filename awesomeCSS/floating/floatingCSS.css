@@ -95,7 +95,7 @@ figure {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 figure img {
   object-fit: cover;
@@ -111,10 +111,11 @@ figure img {
 /* = Action = */
 .action {
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
+  position: absolute;
 }
 .action-btn {
-  position: relative;
+  position: absolute;
   left: 180px;
   top: 40px;
   z-index: 10;
@@ -127,7 +128,7 @@ figure img {
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.action-btn span {
+.action-btn .more {
   position: relative;
   color: #fff;
   width: 100%;
@@ -136,9 +137,11 @@ figure img {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 /*Active*/
-.action-btn.active span {
+.action-btn.active .more {
   transform: rotate(135deg);
 }
 
@@ -147,23 +150,56 @@ figure img {
   z-index: 20;
   min-width: 200px;
   /* min-height: 250px; */
-  /*  visibility: hidden; */
-  /*  opacity: 0; */
+  visibility: hidden;
+  opacity: 0;
   bottom: 55px;
   right: 20px;
   padding: 5px;
-  border: 2px solid #333;
+  /* border: 2px solid #333; */
+  background: #fff;
   border-radius: 1rem;
   transition: 0.3s;
+  cursor: pointer;
 }
 .action-btn.active ul {
   visibility: visible;
   opacity: 1;
   transition: 0.3s;
-  /* bottom: 60px; */
+  bottom: 60px;
+}
+.action-btn ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.action-btn ul li:hover {
+  font-weight: 600;
+}
+.action-btn ul li i {
+  margin-right: 1.5rem;
+  /* opacity: 0.2; */
+  transform: scale(0.7);
+  color: #000;
+}
+.action-btn ul li:hover i {
+  opacity: 0.8;
+  /* transform: scale(1); */
+}
+.action-btn ul li i:hover {
+  color: #8a15ff;
+  transform: scale(1.1);
+}
+.action-btn ul li a span {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 400;
 }
 
-/* = Card Text = */
+/* = Card Text = <<<< */
 .card-text {
   width: 100%;
   margin: 1rem auto;
@@ -178,7 +214,7 @@ figure img {
   letter-spacing: 0.1rem;
   text-align: center;
   font-weight: 500;
-  filter: opacity(0.5);
+  filter: opacity(0.7);
 }
 .card-text__icon {
   width: 100%;
