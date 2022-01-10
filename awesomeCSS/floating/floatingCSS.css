@@ -108,9 +108,65 @@ figure img {
   outline: none;
   border-radius: 1rem;
 }
+/* = Action = */
+.action {
+  width: 100%;
+  position: fixed;
+}
+.action-btn {
+  position: relative;
+  left: 180px;
+  top: 40px;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  background: #333;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.action-btn span {
+  position: relative;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+/*Active*/
+.action-btn.active span {
+  transform: rotate(135deg);
+}
+
+.action-btn ul {
+  position: absolute;
+  z-index: 20;
+  min-width: 200px;
+  /* min-height: 250px; */
+  /*  visibility: hidden; */
+  /*  opacity: 0; */
+  bottom: 55px;
+  right: 20px;
+  padding: 5px;
+  border: 2px solid #333;
+  border-radius: 1rem;
+  transition: 0.3s;
+}
+.action-btn.active ul {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.3s;
+  /* bottom: 60px; */
+}
+
+/* = Card Text = */
 .card-text {
   width: 100%;
-  margin: 0.5rem auto;
+  margin: 1rem auto;
   display: block;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -136,10 +192,10 @@ figure img {
   margin: 0 auto;
 }
 .card-text__icon ul a i {
-  font-size: 1.2rem;
-  color: #fff;
+  font-size: 1.4rem;
+  color: #333;
   cursor: pointer;
 }
 .card-text__icon ul a i:hover {
-  color: #333;
+  color: #fef8f8;
 }
