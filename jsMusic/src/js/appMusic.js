@@ -41,7 +41,7 @@ const listAudio = [
   {
     name: "Artist 2 - Audio 2",
     file: "../src/assets/music/audio2.mp3",
-    duratio: "1:36",
+    duration: "1:36",
   },
   {
     name: "Artist 3 - Audio 3",
@@ -69,6 +69,27 @@ function loadNewTrack(index) {
 }
 // PlayList
 let playListItem = document.querySelectorAll(`.playlist-track-ctn`);
+
+// Ciclo playListItem
+for (let i = 0; i < playListItem.length; i++) {
+  playListItem[i].addEventListener("click", getClickedElement.bind(this));
+}
+
+// Clicked
+function getClickedElement(event) {
+  for (let i = 0; i < playListItem.length; i++) {
+    if (playListItem[i] == event.target) {
+      let clickedIndex = event.target.getAttribute("data-index");
+      if (clickedIndex == this.indexAudio) {
+        this.toggleAudio();
+      } else {
+        loadNewTrack(clickedIndex);
+      }
+    }
+  }
+}
+document.querySelector(`#source-audio`).src = listAudio[indexAudio].file;
+document.querySelector(`.title`).innerHTML = listAudio[indexAudio].nam;
 
 // CurrentAudio
 let currentAudio = document.getElementById(`myAudio`);
