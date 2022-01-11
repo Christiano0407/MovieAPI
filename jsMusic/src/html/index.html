@@ -37,9 +37,30 @@
             <div class="title"></div>
             <div class="duration">00:00</div>
           </div>
+
           <div class="myProgress" id="myProgress">
             <div id="myBar"></div>
           </div>
+
+          <div class="btn-ctn">
+            <div class="btn-action first-btn" onclick="previous()">
+              <div id="btn-faws-back">
+                <i class="fas fa-step-backward"></i>
+              </div>
+            </div>
+            <div class="btn-action" onclick="rewind()">
+              <div id="btn-faws-rewind">
+                <i class="fas fa-backward"></i>
+              </div>
+            </div>
+            <div class="btn-action" onclick="toggleAudio()">
+              <div id="btn-faws-play-pause">
+                <i class="fas fa-play" id="icon-play"></i>
+                <i class="fas fa-pause" id="icon-pause"></i>
+              </div>
+            </div>
+          </div>
+          <div class="playlist-ctn"></div>
         </div>
       </section>
     </main>
