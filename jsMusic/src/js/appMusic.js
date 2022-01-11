@@ -95,6 +95,38 @@ document.querySelector(`.title`).innerHTML = listAudio[indexAudio].nam;
 let currentAudio = document.getElementById(`myAudio`);
 currentAudio.load();
 
+currentAudio.onloadedmetadata = function () {
+  document.getElementsByClassName(`duration`)[0].innerHTML = this.getMinutes(
+    this.currentAudio.duration
+  );
+}.bind(this);
+
+let intervall;
+
+// toggleAudio
+function toggleAudio() {
+  if (this.currentAudio.paused) {
+    document.querySelector(`#icon-play`).style.display = `none`;
+    document.querySelector(`#icon-pause`).style.display = `block`;
+    document
+      .querySelector(`#ptc-` + this.indexAudio)
+      .classList.add("active-track");
+    this.pauseToPlay(this.indexAudio);
+    this.currentAudio.play();
+  } else {
+    document.querySelector(`#icon-play`).style.display = `block`;
+    document.querySelector(`#icon-pause`).style.display = `none`;
+    this.pauseToPlay(this.indexAudio);
+    this.currentAudio.pause();
+  }
+}
+
+// Pause Audio
+function pauseAudio() {
+  this.currentAudio.pause();
+  clearInterval(intervall);
+}
+
 // Timer
 const timer = document.getElementsByClassName(`timer`)[0];
 // Bar Progress
@@ -102,7 +134,7 @@ const barProgress = document.getElementById(`myBar`);
 // OnTimeUpdate
 let width = 0;
 
-function OnTimeUpdate() {
+function onTimeUpdate() {
   let t = this.currentAudio.currentTime;
   timer.innerHTML = this.getMinutes(t);
   this.setBarProgress();
@@ -117,5 +149,14 @@ function OnTimeUpdate() {
     }
   }
 }
+
+// Bar Progress >
+function setBarProgress() {
+  let progress =
+    (this.currentAudio.currentTime / this.currentAudio.duration) * 100;
+  document.getElementById("myBar").style.width = progress + "%";
+}
+
+// Get Minutes >
 
 console.groupEnd();
