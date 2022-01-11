@@ -82,11 +82,14 @@ main {
   cursor: pointer;
 }
 .playlist-track-ctn:last-child {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .playlist-track-ctn > div {
   margin-top: 1rem;
   margin-right: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .playlist-info-track {
@@ -125,7 +128,7 @@ main {
 #myBar {
   width: 0%;
   height: 0.5rem;
-  background-color: rgb(216, 213, 213);
+  background-color: rgb(27, 27, 27);
   border-radius: 1rem;
 }
 .logo {
@@ -154,6 +157,7 @@ main {
 .fas {
   color: #fff;
   font-size: 2rem;
+  padding: 1rem;
 }
 
 #icon-pause {
