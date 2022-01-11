@@ -85,3 +85,30 @@ main {
   background-color: rgb(216, 213, 213);
   border-radius: 1rem;
 }
+.logo {
+  fill: red;
+}
+.btn-action {
+  cursor: pointer;
+  padding-top: 1rem;
+  width: 3rem;
+}
+.btn-ctn > div {
+  margin-top: 1.8rem;
+  margin-bottom: 1.8rem;
+  padding: 0.5rem;
+}
+.first-btn {
+  margin-left: 0.3rem;
+}
+/*Playlist Track*/
+
+.playlist-ctn {
+  padding-bottom: 2rem;
+}
+
+/*Icons*/
+.fas {
+  color: #fff;
+  font-size: 2rem;
+}
