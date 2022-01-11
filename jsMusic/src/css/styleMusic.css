@@ -73,6 +73,43 @@ main {
 .duration {
   margin-left: 1rem;
 }
+/*Add Js = CSS*/
+.playlist-track-ctn {
+  display: flex;
+  background-color: #fff;
+  margin-top: 0.3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.playlist-track-ctn:last-child {
+  border: 1px solid red;
+}
+.playlist-track-ctn > div {
+  margin-top: 1rem;
+}
+
+.playlist-info-track {
+  width: 80%;
+}
+.playlist-info-track,
+.playlist-duration {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  color: #fff;
+  font-size: 1.4rem;
+  pointer-events: none;
+}
+.active-track {
+  background-color: #4d4d4d;
+  color: #fff;
+  font-weight: bold;
+}
+.playlist-btn-play {
+  pointer-events: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+/*My progress*/
 #myProgress {
   width: 420px;
   background-color: #d9d9f2;
