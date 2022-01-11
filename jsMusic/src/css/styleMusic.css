@@ -1,6 +1,8 @@
 :root {
   --clr-white: #fff;
   --clr-black: #000;
+  --clr-player: #373737;
+  --clr-barProgress: #d9d9f2;
 }
 
 *,
@@ -27,4 +29,53 @@ img {
 }
 body {
   font-family: "Montserrat", sans-serif;
+  width: 100%;
+}
+main {
+  width: 100%;
+  margin: 0 auto;
+  height: 600px;
+  background-color: rgb(190, 190, 190);
+}
+.music {
+  width: 100%;
+  height: 100%;
+  border: 2px solid red;
+  margin: 0 auto;
+}
+
+/*PLayer Audio*/
+.player-ctn {
+  width: 450px;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  background-color: var(--clr-player);
+  margin: 5rem auto;
+}
+.info-ctn {
+  padding-top: 2rem;
+}
+.info-ctn > div {
+  margin-bottom: 0.8rem;
+  color: #fff;
+}
+.info-ctn,
+.btn-ctn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  width: 210px;
+  text-align: center;
+  margin-left: 1rem;
+}
+.duration {
+  margin-left: 1rem;
+}
+#myProgress {
+  width: 420px;
+  background-color: #d9d9f2;
+  cursor: pointer;
+  border-radius: 1rem;
 }

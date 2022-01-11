@@ -21,6 +21,28 @@
     <title>Player Music App Mp3 | Reproductor Vanilla Javascript</title>
   </head>
   <body>
+    <main>
+      <section class="music">
+        <audio id="myAudio" controls ontimeupdate="onTimeUpdate()">
+          <source
+            id="source-audio"
+            src="/src/assets/music/audioblocks-sandbar-30sec_r5fIiUGpND_WM-SBA-300505949-preview.mp3"
+            type="audio/mpeg"
+          />
+        </audio>
+
+        <div class="player-ctn">
+          <div class="info-ctn">
+            <div class="timer">00:00</div>
+            <div class="title"></div>
+            <div class="duration">00:00</div>
+          </div>
+          <div class="myProgress" id="myProgress">
+            <div id="myBar"></div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="/src/js/appMusic.js"></script>
   </body>
 </html>
