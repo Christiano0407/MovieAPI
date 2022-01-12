@@ -137,3 +137,9 @@ details[open] & {
   pointer-events: all;
   opacity: 0.5;
 }
+details summary {
+  list-style: none;
+}
+details summary:focus {
+  outline: none;
+}
