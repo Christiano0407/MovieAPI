@@ -46,6 +46,7 @@ body {
   right: 0;
   left: 0;
   background-color: var(--clr-white);
+  border: 2px solid red;
 }
 .navigation__button {
   border: none;
@@ -179,4 +180,21 @@ body {
   text-decoration: none;
   font-size: 1.4rem;
   padding: 0 2.4rem;
+}
+
+.sidebar__section__avatar {
+  border-radius: 50%;
+  /*  background-color: green; */
+  background-image: url(/src/assets/img/one.jpg);
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sidebar__section__link--selected {
+  background-color: rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+}
+.sidebar__section__link--selected svg {
+  fill: #f00;
 }
