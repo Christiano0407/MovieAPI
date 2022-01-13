@@ -216,3 +216,72 @@ body {
   color: #606060;
   text-decoration: none;
 }
+
+/*<!-- ALL THE VIDEOS -->*/
+.feed {
+  margin-top: 10.4rem;
+  margin-left: 20.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 3px solid blue;
+}
+.feed__item {
+  margin: 0 0.8rem 4rem 0.8rem;
+}
+.feed__item__thumbnail {
+  /* width: 306px; */
+  width: 100%;
+  height: 202px;
+  /* background-color: grey; */
+  background-image: url(/src/assets/img/four.jpg);
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.feed__item__info {
+  display: flex;
+  font-size: 1.4rem;
+  color: rgb(96, 96, 96);
+}
+.feed__item__info h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: rgb(3, 3, 3);
+}
+.feed__item__info a {
+  text-decoration: none;
+  color: unset;
+}
+.feed__item__info p {
+  margin: 0;
+}
+.feed__item__info__avatar {
+  height: 3.6rem;
+  width: 3.6rem;
+  border-radius: 50%;
+  /* background-color: grey; */
+  margin: 1.2rem 1.2rem 0 0;
+  background-image: url(/src/assets/img/three.jpg);
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.feed__section {
+  border-top: 3px solid lightgrey;
+  border-bottom: 3px solid lightgrey;
+  margin: 24px 35px 48px;
+}
+
+.feed__section h2 {
+  margin-left: 8px;
+}
+
+.feed__section__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
