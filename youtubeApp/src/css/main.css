@@ -209,3 +209,10 @@ body {
   font-size: 1.2rem;
   color: #909090;
 }
+.sidebar__section__link--small {
+  margin-right: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #606060;
+  text-decoration: none;
+}
