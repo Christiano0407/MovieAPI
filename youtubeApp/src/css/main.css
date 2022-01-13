@@ -33,8 +33,9 @@ svg {
 }
 body {
   font-family: "Montserrat", sans-serif;
-  background: lightslategray;
+  background: #333;
 }
+/* =========================== Part One Navigation ====================*/
 .navigation {
   height: 5.6rem;
   display: flex;
@@ -92,3 +93,20 @@ body {
 .navigation__options {
   display: flex;
 }
+.navigation__icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.navigation__avatar {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  /* background-color: grey; */
+  background-image: url(/src/assets/img/one.jpg);
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* =========================== Part Two Content Video ====================*/
