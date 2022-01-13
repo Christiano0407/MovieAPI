@@ -129,7 +129,7 @@ body {
   margin: 1.2rem 1.2rem 1.2rem 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: rgba(0, 0, 0, 0.5);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   padding: 0 1.2rem;
   line-height: 3rem;
   border-radius: 1.6rem;
@@ -185,7 +185,7 @@ body {
 .sidebar__section__avatar {
   border-radius: 50%;
   /*  background-color: green; */
-  background-image: url(/src/assets/img/one.jpg);
+  background-image: url(/src/assets/img/three.jpg);
   object-fit: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -197,4 +197,15 @@ body {
 }
 .sidebar__section__link--selected svg {
   fill: #f00;
+}
+/* .sidebar__section__avatar:nth-of-type(2) { */
+/*   background-image: url(/src/assets/img/three.jpg); */
+/*   object-fit: cover; */
+/* } */
+.sidebar__section:last-child {
+  padding: 1.6rem 2.4rem 0 2.4rem;
+}
+.sidebar__section:last-child p {
+  font-size: 1.2rem;
+  color: #909090;
 }
