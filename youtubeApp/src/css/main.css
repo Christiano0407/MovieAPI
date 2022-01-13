@@ -14,9 +14,6 @@
 html {
   font-size: 62.5%;
 }
-body {
-  font-family: "Montserrat", sans-serif;
-}
 ul {
   list-style: none;
 }
@@ -33,4 +30,65 @@ img {
 }
 svg {
   fill: rgb(96, 96, 96);
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background: lightslategray;
+}
+.navigation {
+  height: 5.6rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.6rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--clr-white);
+}
+.navigation__button {
+  border: none;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  cursor: pointer;
+  line-height: 0.5rem;
+}
+.navigation__menu,
+.navigation__search,
+.navigation__options {
+  display: flex;
+  align-items: center;
+}
+.navigation__options .navigation__button {
+  margin-right: 0.8rem;
+}
+.navigation__menu img {
+  margin-left: 0.5rem;
+}
+.navigation__menu__button svg {
+  height: 2.4rem;
+}
+.navigation__search input {
+  width: 360px;
+  height: 32px;
+  border: 1px solid rgb(211, 211, 211);
+  font-size: 1.6rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.5rem;
+}
+.navigation__search__icon {
+  border: 1px solid rgb(211, 211, 211);
+  border-left: none;
+  height: 3.2rem;
+  width: 6.5rem;
+}
+.navigation__search__icon:hover {
+  background-color: #e4e4e4;
+}
+.navigation__search__icon svg {
+  height: 2rem;
+  width: 2rem;
+}
+.navigation__options {
+  display: flex;
 }
