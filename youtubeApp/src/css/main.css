@@ -33,7 +33,7 @@ svg {
 }
 body {
   font-family: "Montserrat", sans-serif;
-  background: #333;
+  background: #fff;
 }
 /* =========================== Part One Navigation ====================*/
 .navigation {
@@ -76,6 +76,7 @@ body {
   font-size: 1.6rem;
   padding: 0.3rem 0.8rem;
   border-radius: 0.5rem;
+  outline-color: rgb(97, 97, 97);
 }
 .navigation__search__icon {
   border: 1px solid rgb(211, 211, 211);
@@ -110,3 +111,72 @@ body {
 }
 
 /* =========================== Part Two Content Video ====================*/
+/*Chips ==> */
+.chips {
+  background: var(--clr-white);
+  position: fixed;
+  display: flex;
+  top: 5.6rem;
+  right: 0;
+  left: 20.4rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid red;
+}
+.chips__item {
+  cursor: pointer;
+  margin: 1.2rem 1.2rem 1.2rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.4rem;
+  padding: 0 1.2rem;
+  line-height: 3rem;
+  border-radius: 1.6rem;
+}
+.chips__item:first-child {
+  margin-left: 1rem;
+}
+
+.chips__item--selected {
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+}
+
+/*Sidebar ==> */
+.sidebar {
+  border: 2px solid red;
+  width: 20.4rem;
+  position: fixed;
+  top: 5.6rem;
+  left: 0;
+  bottom: 0;
+  padding: 1.2rem 0;
+  height: calc(100vh - 80px);
+  overflow-y: scroll;
+}
+.sidebar__section {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sidebar__section__link svg,
+.sidebar__section__avatar {
+  height: 2.4rem;
+  width: 2.4rem;
+  margin-right: 2.4rem;
+}
+.sidebar__section h3 {
+  padding: 0.8rem 2.4rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: rgb(96, 96, 96);
+}
+.sidebar__section__link {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  color: rgb(3, 3, 3);
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 0 2.4rem;
+}
