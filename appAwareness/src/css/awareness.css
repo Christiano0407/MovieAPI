@@ -22,6 +22,7 @@ ul {
 }
 a {
   text-decoration: none;
+  color: unset;
 }
 h1,
 h2,
@@ -37,4 +38,71 @@ body {
   color: var(--text-main);
   margin: 2rem auto;
   max-width: 1000px;
+}
+.navigation {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 3px solid red;
+}
+.brand,
+.links {
+  display: flex;
+  align-items: center;
+}
+.brand a {
+  margin-left: 0.5rem;
+}
+.brand figure {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.brand figure img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.links {
+  grid-column-start: 3;
+  font-size: 0.75rem;
+  font-weight: 100;
+}
+.links a {
+  margin-left: 2.5rem;
+}
+.links a:hover {
+  color: var(--text-secondary);
+}
+.links a:last-child {
+  background-color: var(--background-color-main);
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+}
+/*Header*/
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  border: 3px solid blueviolet;
+}
+header img {
+  max-width: 500px;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+header hr {
+  width: 2rem;
+  margin: 0;
+}
+.sub-heading {
+  color: var(--accent-color-secondary);
+  margin-bottom: 0;
+}
+.description {
+  font-weight: 100;
 }
