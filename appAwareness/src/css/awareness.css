@@ -6,7 +6,7 @@
   --text-secondary: #575756;
   --background-color: #1f1f1f;
   --bacground-color-secondary: #101010;
-  --background-color-main: #d8330f;
+  --accent-color-main: #d8330f;
   --accent-color-secondary: #ebac0b;
 }
 
@@ -118,4 +118,119 @@ header hr {
     "global region"
     "global map";
   margin-bottom: 3rem;
+}
+.title h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+.title p {
+  font-weight: 100;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+.stats-region {
+  grid-area: region;
+  justify-self: end;
+  display: flex;
+  margin-bottom: 1rem;
+}
+.stats-region > div {
+  text-align: center;
+  width: 185px;
+  background-color: var(--bacground-color-secondary);
+  margin-right: 0.25rem;
+}
+.stats-region > div:first-child {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.stats-region > div:last-child {
+  margin-right: 0;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.stats-region p,
+.stats-global {
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+.stats-region span,
+.stats-global span {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.stats-global {
+  grid-area: global;
+  align-self: end;
+}
+.stats-global > div {
+  text-align: center;
+  width: 185px;
+  background-color: var(--bacground-color-secondary);
+  padding: 0.5rem 0;
+  margin-top: 0.25rem;
+}
+.stats-global span {
+  display: block;
+  padding-top: 0.5rem;
+}
+
+.stats-map {
+  grid-area: map;
+}
+.stats-map > div {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.stats-map figure img {
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 90%;
+}
+.dot {
+  border-radius: 50%;
+  background-color: var(--accent-color-main);
+  height: 0.5rem;
+  width: 0.5rem;
+  box-shadow: 0 0 1.5rem 0.15rem var(--accent-color-main);
+}
+.dots .dot:nth-child(1) {
+  position: absolute;
+  top: 8.5rem;
+  left: 10.5rem;
+}
+.dots .dot:nth-child(2) {
+  position: absolute;
+  top: 215px;
+  left: 240px;
+}
+.dots .dot:nth-child(3) {
+  position: absolute;
+  top: 140px;
+  left: 400px;
+}
+.dots .dot:nth-child(4) {
+  position: absolute;
+  top: 70px;
+  left: 385px;
+}
+.dots .dot:nth-child(5) {
+  position: absolute;
+  top: 90px;
+  right: 210px;
+}
+.dots .dot:nth-child(6) {
+  position: absolute;
+  bottom: 80px;
+  right: 130px;
+}
+
+.precaution-item {
+  max-width: 50%;
+  margin: 0 auto;
+  border: 2px solid green;
 }
