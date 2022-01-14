@@ -1,0 +1,40 @@
+:root {
+  --clr-white: #fff;
+  --clr-black: #000;
+  --clr-blackTwo: #333;
+  --text-main: #f4f4f4;
+  --text-secondary: #575756;
+  --background-color: #1f1f1f;
+  --bacground-color-secondary: #101010;
+  --background-color-main: #d8330f;
+  --accent-color-secondary: #ebac0b;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  letter-spacing: 0.1rem;
+}
+body {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-main);
+  margin: 2rem auto;
+  max-width: 1000px;
+}
