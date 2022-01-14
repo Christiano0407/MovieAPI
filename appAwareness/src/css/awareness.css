@@ -228,9 +228,37 @@ header hr {
   bottom: 80px;
   right: 130px;
 }
-
-.precaution-item {
+.precautions-item {
   max-width: 50%;
   margin: 0 auto;
-  border: 2px solid green;
+}
+
+.precautions-item > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.precautions-step {
+  position: relative;
+}
+
+.precautions-step p {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  margin: 0;
+}
+
+.precautions-text {
+  font-size: 0.9rem;
+  font-weight: 100;
+  margin-bottom: 3rem;
+  margin-top: 0;
+}
+
+.precautions-item:nth-child(even) .precautions-text {
+  text-align: right;
+  font-size: 0.9rem;
+  font-weight: 100;
 }
