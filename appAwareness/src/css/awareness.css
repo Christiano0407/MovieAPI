@@ -106,3 +106,16 @@ header hr {
 .description {
   font-weight: 100;
 }
+.title {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.stats {
+  border: 3px solid greenyellow;
+  display: grid;
+  grid-template-areas:
+    "global region"
+    "global map";
+  margin-bottom: 3rem;
+}
