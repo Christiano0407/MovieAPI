@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="/nav01/nav01CSS.css" />
     <title>Navigation One | Plus CSS Style</title>
   </head>
@@ -25,12 +32,39 @@
 
       <div class="navigation__icons">
         <ul class="navigation__icons--menu">
-          <li><a href="#"></a>icon</li>
-          <li><a href="#"></a>icon</li>
-          <li><a href="#"></a>icon</li>
+          <li>
+            <a href="#"><i class="fas fa-adjust"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-microphone"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-search"></i></a>
+          </li>
         </ul>
         <div class="navigation__icons--user">
           <div class="user"></div>
+          <div class="drop">
+            <a href="#"
+              ><i class="far fa-caret-square-down" onclick="actionToggle();"></i
+            ></a>
+            <div class="drop__list">
+              <ul class="drop__list--media">
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-tiktok"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitch"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -40,5 +74,7 @@
       </figure>
     </header>
     <main class="main"></main>
+
+    <script src="/nav01/appNav01.js"></script>
   </body>
 </html>
