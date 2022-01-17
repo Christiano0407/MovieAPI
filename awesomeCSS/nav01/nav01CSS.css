@@ -106,6 +106,7 @@ body {
   font-size: 1.5rem;
   color: #000;
   cursor: pointer;
+  margin-right: 1rem;
 }
 .drop a i.active {
   transform: rotate(180deg) scale(0.9);
@@ -133,6 +134,22 @@ body {
   opacity: 1;
   transition: 0.3s;
   top: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.drop__list--media a i {
+  font-size: 1.8rem;
+}
+.drop__list--media a i:hover {
+  opacity: 0.6;
+  transform: scale(1.2);
+}
+.drop__list--media a span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
 }
 /* User */
 .header {
