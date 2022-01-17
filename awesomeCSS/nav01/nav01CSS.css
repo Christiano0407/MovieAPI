@@ -99,7 +99,12 @@ body {
 .navigation__icons--user .user {
   width: 30px;
   height: 30px;
-  background: gray;
+  /* background: gray; */
+  background-image: url(../src/assets/img/two.jpg);
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 50%;
   outline: none;
   border: none;
