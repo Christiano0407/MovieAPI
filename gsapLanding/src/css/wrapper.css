@@ -1,3 +1,4 @@
+/*wrapper*/
 .wrapper {
   position: relative;
   width: 100%;
@@ -71,13 +72,20 @@
   flex-direction: column;
   border: 2px solid red;
 }
+/*Landing*/
 .landing aside .disc {
   height: 80px;
-  background-color: var(--clr-disc);
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
+  border-radius: 0.5rem;
+  border: 3px solid #fff;
+}
+.landing aside .disc i {
+  color: #fff;
+  font-size: 2.2rem;
 }
 .landing aside .landing__nav {
   display: flex;
@@ -90,6 +98,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
 }
 .landing__nav .landing__nav--list .scroll {
   display: flex;
@@ -100,4 +109,64 @@
   color: #fff;
   list-style: none;
   position: relative;
+}
+.landing__nav .landing__nav--list li:nth-child(2) {
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  height: 100px;
+  top: 20px;
+}
+.landing__nav .landing__nav--list li:last-child {
+  font-size: 0.8rem;
+  transform: rotate(-90deg);
+  top: 60px;
+}
+.landing__nav .landing__nav--list li:last-child:hover {
+  opacity: 0.5;
+}
+.landing__nav .landing__nav--list .social {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.landing__nav .landing__nav--list .social li {
+  /* margin-top: 50px; */
+  margin-top: 20px;
+}
+.landing__nav .landing__nav--list .social li a {
+  color: #fff;
+}
+/*Section*/
+.section {
+  width: 100%;
+  border: 2px solid blue;
+}
+.section .header {
+  border: 2px solid greenyellow;
+  height: 80px;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section .header h1 {
+  color: var(--clr-white);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.section .header h1::after {
+  content: " ";
+  border: 2px solid #fff;
+  display: flex;
+  height: 2px;
+  margin-top: 5px;
+  width: 40%;
+}
+.section .header .header__nav .header__nav--list li {
+  float: left;
+  margin-left: 5rem;
+}
+.section .header .header__nav .header__nav--list li a {
+  color: var(--clr-white);
+  font-size: 1rem;
 }
