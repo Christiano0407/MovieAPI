@@ -6,6 +6,7 @@
   --clr-white: #fff;
   --clr-black: #000;
   --clr-blTwo: #333;
+  --clr-wrapper: #636363;
 
   /*Fonts Size*/
   --font-size-Tittle: 2.4rem;
@@ -34,6 +35,12 @@ p {
 h1,
 h2 {
   text-transform: uppercase;
+}
+img {
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body {
