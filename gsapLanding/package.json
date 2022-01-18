@@ -1,0 +1,11 @@
+{
+  "name": "gsaplanding",
+  "version": "1.0.0",
+  "description": "project_landing-wrapper",
+  "main": "src/js/appJs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris04",
+  "license": "MIT"
+}
