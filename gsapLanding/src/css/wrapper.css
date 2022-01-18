@@ -34,14 +34,14 @@
   border-radius: 50%;
   left: 50%;
   /* margin-left: -850px; */
-  margin-left: -800px;
+  margin-left: -750px;
   /* margin-top: -850px; */
-  margin-top: -800px;
+  margin-top: -750px;
   top: 50%;
 }
 .wrapper .circle__outer .circle__inner {
-  height: 800px;
-  width: 800px;
+  height: 900px;
+  width: 900px;
   border: solid rgba(255, 255, 255, 0.5);
   border-radius: inherit;
   /*inner circle--center*/
@@ -50,8 +50,8 @@
   align-items: center;
 }
 .wrapper .circle__outer .circle__inner .circle__inner--center {
-  height: 400px;
-  width: 400px;
+  height: 450px;
+  width: 450px;
   border: solid rgba(255, 255, 255, 0.7);
   border-radius: inherit;
 }
@@ -66,7 +66,7 @@
   background: radial-gradient(circle, rgba(62, 62, 62, 0) 0%, #000 100%);
 }
 .wrapper .landing aside {
-  height: 1000px;
+  height: 100vh;
   width: 80px;
   display: flex;
   flex-direction: column;
@@ -90,7 +90,7 @@
 .landing aside .landing__nav {
   display: flex;
   justify-content: center;
-  height: 1000px;
+  height: 100vh;
   padding: 4rem 0;
   box-sizing: border-box;
 }
@@ -169,4 +169,79 @@
 .section .header .header__nav .header__nav--list li a {
   color: var(--clr-white);
   font-size: 1rem;
+}
+/*content*/
+.content {
+  position: relative;
+  width: inherit;
+  display: flex;
+  color: #fff;
+  height: 75vh;
+  color: #fff;
+  justify-content: center;
+  margin-left: 5%;
+}
+.content .features {
+  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  /* bottom: 80px; */
+}
+.content .features .feature {
+  width: 200px;
+  height: 75vh;
+  transform: rotate(-90deg);
+  transform-origin: bottom;
+  margin-top: 1rem;
+}
+.content .features .feature span {
+  display: block;
+  margin-bottom: 40px;
+  width: 40px;
+  height: 4px;
+  background-color: #ee5454;
+  position: absolute;
+  bottom: 50px;
+  margin-left: 40px;
+}
+.content .features .feature .wrap {
+  overflow: hidden;
+  margin-left: 1.2rem;
+}
+.content .features .feature .wrap h1 {
+  margin-left: 1rem;
+  font-size: 15px;
+  margin-bottom: 0.4rem;
+  color: #fff;
+}
+.content .features .feature .wrap p {
+  font-size: 10px;
+  margin-left: 1.2rem;
+  line-height: 15px;
+  color: #a8a8a8;
+}
+.content .features .feature:nth-child(2) span {
+  /* height: 50px; */
+  /* background: red; */
+}
+
+.content .theme {
+  width: 40%;
+  margin-right: 150px;
+  position: relative;
+  bottom: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content .theme h2 {
+  text-transform: uppercase;
+  color: #ee5454;
+  font-size: 1.5rem;
+  align-self: flex-start;
+  overflow: hidden;
 }
