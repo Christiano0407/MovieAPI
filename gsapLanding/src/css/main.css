@@ -1,0 +1,42 @@
+/* = Import = */
+@import url(/src/css/wrapper.css);
+
+/* = Root = */
+:root {
+  --clr-white: #fff;
+  --clr-black: #000;
+  --clr-blTwo: #333;
+
+  /*Fonts Size*/
+  --font-size-Tittle: 2.4rem;
+  --fnt-size-medium: 1.8rem;
+  --fnt-size-medOne: 1.5rem;
+  --fnt-size-small: 1.2rem;
+}
+
+/* = CSS Style General = */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+p {
+  letter-spacing: 0.1rem;
+}
+h1,
+h2 {
+  text-transform: uppercase;
+}
+
+body {
+  width: 100%;
+  font-family: "Nanum Gothic Coding", monospace;
+}
