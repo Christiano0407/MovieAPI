@@ -8,12 +8,14 @@
   --clr-blTwo: #333;
   --clr-wrapper: #636363;
   --clr-disc: #ee5454;
+  --clr-extra: #00bfb2;
 
   /*Fonts Size*/
   --font-size-Tittle: 2.4rem;
   --fnt-size-medium: 1.8rem;
   --fnt-size-medOne: 1.5rem;
   --fnt-size-small: 1.2rem;
+  --font-family: "Rubik", sans-serif;
 }
 
 /* = CSS Style General = */
@@ -47,4 +49,5 @@ img {
 body {
   width: 100%;
   font-family: "Nanum Gothic Coding", monospace;
+  /* font-family: 'Rubik', sans-serif; */
 }
