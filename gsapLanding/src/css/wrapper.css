@@ -229,6 +229,7 @@
 }
 
 .content .theme {
+  border: 2px solid red;
   width: 50%;
   margin-right: 150px;
   position: relative;
