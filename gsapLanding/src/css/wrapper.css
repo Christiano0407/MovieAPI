@@ -179,7 +179,7 @@
   height: 75vh;
   color: #fff;
   justify-content: center;
-  margin-left: 5%;
+  margin-left: 10%;
 }
 .content .features {
   width: 25%;
@@ -298,4 +298,101 @@
   top: 0;
   left: 0;
   background-color: var(--clr-extra);
+}
+
+.extra {
+  border: 2px solid #fff;
+  width: 20%;
+  height: 85vh;
+  position: relative;
+}
+.extra .half__num {
+  display: flex;
+  color: var(--clr-extra);
+  align-items: center;
+  position: relative;
+  top: 50px;
+  left: 70px;
+  /* overflow: hidden; */
+}
+.extra .half__num .half__num--title {
+  font-size: 4rem;
+  font-weight: 200;
+  color: #fff;
+  position: relative;
+  right: 250px;
+  top: 50px;
+  z-index: 30;
+}
+.half__num .half__num--title span {
+  padding: 0.5rem;
+}
+.half__num--title span i {
+  font-size: 2rem;
+  color: var(--clr-extra);
+}
+.half__num .half__num--title .wrap {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.extra .new__beginning {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+}
+.extra .new__beginning .go {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13px;
+  border-radius: 50%;
+  background-color: var(--clr-extra);
+  position: relative;
+  right: 200px;
+  top: 450px;
+}
+.extra .new__beginning .go span {
+  width: inherit;
+  height: inherit;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  letter-spacing: 1px;
+  border: 1px solid #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.extra .new__beginning .content {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 190px;
+  top: 190px;
+}
+
+.extra .new__beginning .content h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  position: relative;
+  bottom: 1rem;
+}
+.extra .new__beginning .content h4::before {
+  content: " ";
+}
+.extra .new__beginning .content p {
+  font-size: 8px;
+  width: 250px;
+  color: #a8a8a8;
+  margin-top: 5px;
+}
+.extra .scroll {
 }
