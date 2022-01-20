@@ -43,5 +43,20 @@ tl.fromTo(
   1
 );
 // Miracle
+/* tl.fromTo( */
+/*   ".landing .section .content .theme .theme__miracle .wrap", */
+/*   0.5, */
+/*   { top: "300" }, */
+/*   { top: "0" }, */
+/*   1 */
+/* ); */
 
+tl.fromTo(
+  ".landing section .content .theme .theme__miracle h1 .wrap",
+  0.5,
+  { top: "300" },
+  { top: "0" },
+  1
+);
+// Like it
 console.groupEnd();
