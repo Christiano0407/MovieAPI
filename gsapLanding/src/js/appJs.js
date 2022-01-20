@@ -52,11 +52,28 @@ tl.fromTo(
 /* ); */
 
 tl.fromTo(
-  ".landing section .content .theme .theme__miracle h1 .wrap",
+  ".landing section .content .theme .theme__miracle h1 span .wrap",
   0.5,
   { top: "300" },
   { top: "0" },
   1
 );
 // Like it
+// like it
+tl.fromTo(
+  ".landing section .content .theme p",
+  0.5,
+  { opacity: "0" },
+  { opacity: "1" },
+  3
+);
+
+// bottom-bar
+tl.fromTo(
+  ".landing section .content .theme .bar",
+  0.5,
+  { bottom: "-200" },
+  { bottom: "0" },
+  1.5
+);
 console.groupEnd();
