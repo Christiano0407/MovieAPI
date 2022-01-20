@@ -58,6 +58,8 @@ main {
   flex-wrap: nowrap;
   grid-auto-flow: row;
   grid-auto-rows: 1fr;
+  padding: 1rem;
+  align-items: center;
 }
 .card {
   position: relative;
@@ -81,7 +83,57 @@ main {
   -moz-transition: transform 0.3s ease;
   -ms-transition: transform 0.3s ease;
   -o-transition: transform 0.3s ease;
+  padding: 0.5rem;
 }
-.card .card-1 {
-  background-image: url("");
+main .card.card-1 {
+  background-image: url("/assets/img/one.jpg");
+}
+main .card.card-2 {
+  background-image: url("/assets/img/two.png");
+}
+.card.card-3 {
+  background-image: url("/assets/img/three.jpg");
+}
+.card.card-4 {
+  background-image: url("/assets/img/four.jpg");
+}
+.card.card-5 {
+  background-image: url("/assets/img/two.png");
+}
+.card .content {
+  position: absolute;
+  width: 100%;
+  /*=Option 1=*/
+  /* bottom: 0; */
+  /* left: 0; */
+  /*Option Two*/
+  height: 95%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  opacity: 0;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 0)
+  );
+  transform: translateY(100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  -webkit-transition: transform 0.3s ease, opacity 0.3s ease;
+  -moz-transition: transform 0.3s ease, opacity 0.3s ease;
+  -ms-transition: transform 0.3s ease, opacity 0.3s ease;
+  -o-transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.card .content h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 30px;
 }
