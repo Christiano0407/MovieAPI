@@ -70,7 +70,7 @@
   width: 80px;
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 /*Landing*/
 .landing aside .disc {
@@ -138,10 +138,10 @@
 /*Section*/
 .section {
   width: 100%;
-  border: 2px solid blue;
+  /*  border: 2px solid blue; */
 }
 .section .header {
-  border: 2px solid greenyellow;
+  /* border: 2px solid greenyellow; */
   height: 80px;
   padding: 0px 20px;
   box-sizing: border-box;
@@ -229,7 +229,7 @@
 }
 
 .content .theme {
-  border: 2px solid red;
+  /*   border: 2px solid red; */
   width: 50%;
   margin-right: 150px;
   position: relative;
@@ -301,7 +301,7 @@
 }
 
 .extra {
-  border: 2px solid #fff;
+  /* border: 2px solid #fff; */
   width: 20%;
   height: 85vh;
   position: relative;
