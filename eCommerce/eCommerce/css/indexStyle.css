@@ -3,7 +3,23 @@
 @import url("../css/component/webStyle.css");
 @import url("../css/keyframe/animation.css");
 /* === ROOT === */
-
+:root {
+  /*Color*/
+  --clr-white: #fff;
+  --clr-black: #000;
+  --clr-blacTwo: #333;
+  /*Fonts*/
+  --font-tall: 2.4rem;
+  --font-title: 1.8rem;
+  --font-medium: 1.6rem;
+  --font-small: 1.2rem;
+  /*Margin*/
+  --margin: 0 auto;
+  --margin-right: 1rem;
+  --margin-left: 1rem;
+  --margin-top: 2rem;
+  --margin-bottom: 2rem;
+}
 /* === General Project === */
 *,
 *::before,
@@ -14,6 +30,7 @@
 }
 html {
   font-size: 62.5%;
+  /*  scroll-behavior: smooth; */
 }
 ul {
   list-style: none;
@@ -40,5 +57,6 @@ h1 {
   font-weight: 700;
 }
 body {
+  width: 100%;
   font-family: "Lato", sans-serif;
 }
