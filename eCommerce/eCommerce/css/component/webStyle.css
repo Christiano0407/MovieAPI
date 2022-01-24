@@ -1,3 +1,5 @@
 .navigation {
   background-color: var(--clr-blacTwo);
+  color: var(--clr-white);
+  padding: 2rem 5rem;
 }
