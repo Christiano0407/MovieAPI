@@ -1,0 +1,44 @@
+/* === Componenent / Landing / MediaQueries=== */
+@import url("../css/mediaQuerie/mediaQueries.css");
+@import url("../css/component/webStyle.css");
+@import url("../css/keyframe/animation.css");
+/* === ROOT === */
+
+/* === General Project === */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+p,
+span {
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+}
+h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
