@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="/landing/src/css/main.css" />
     <title>Landing Page Web | Web Design | Javascript 2022</title>
   </head>
@@ -26,7 +33,44 @@
           <h2>ScreenPlay</h2>
         </div>
       </header>
+      <div class="wrapper">
+        <div class="hero">
+          <h1>Ride in Style</h1>
+          <p>
+            Rent a Vespa at any VespaJoy location <br />
+            across India and enjoy unlimited kilometers!
+          </p>
+          <button id="btn" class="btn-action">
+            Now<i class="fas fa-long-arrow-alt-right"></i>
+          </button>
+        </div>
+        <!--lottie -->
+        <div class="player">
+          <lottie-player
+            src="https://assets5.lottiefiles.com/packages/lf20_8ext0crn.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+        <!-- <div class="player"> -->
+        <!--   <lottie-player -->
+        <!--     src="https://assets3.lottiefiles.com/packages/lf20_muiaursk.json" -->
+        <!--     background="transparent" -->
+        <!--     speed="1" -->
+        <!--     loop -->
+        <!--     autoplay -->
+        <!--   > -->
+        <!--   </lottie-player> -->
+        <!-- </div> -->
+
+        <div class="mouse-icon"></div>
+      </div>
     </main>
+
+    <!-- = Aside = -->
+    <aside class="aside"></aside>
     <!--Lottie Landing / GSAP /  Web -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>

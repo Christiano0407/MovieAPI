@@ -1,5 +1,5 @@
 /* = Import =*/
-
+@import url("/landing/src/css/btn.css");
 /* = ROOT =*/
 :root {
   --clr-white: #fff;
@@ -84,6 +84,81 @@ body {
   cursor: pointer;
 }
 #navigation .nav__list .menu-item a:hover {
-  color: #333;
-  opacity: 0.5;
+  /* color: #333; */
+  /* opacity: 0.5; */
+  box-shadow: inset -2px -2px 8px rgba(0, 0, 0, 0.15),
+    inset -2px -2px 8px rgba(255, 255, 255, 0.1),
+    inset 2px 2px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 8px rgba(255, 255, 255, 1);
+}
+
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-rows: 10rem 1fr;
+  border: 4px solid black;
+}
+.main .header {
+  border: 2px solid blue;
+  display: flex;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+.main .header .logo {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.logo img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+.logo h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.main .wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 100px;
+  gap: 1rem;
+}
+.main .wrapper .hero {
+  width: 100%;
+  height: 100%;
+  padding: 5rem 7rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.main .wrapper .hero h1 {
+  font-size: 6rem;
+  line-height: 140%;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+.main .wrapper .hero p {
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 5rem;
+}
+/* = lottie = */
+.player {
+  align-self: center;
+  justify-self: center;
+  border: 2px solid violet;
+  width: 500px;
+}
+
+/*Aside*/
+.aside {
+  border: 4px solid green;
+  grid-area: aside;
 }
