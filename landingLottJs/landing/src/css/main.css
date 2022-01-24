@@ -1,0 +1,43 @@
+/* = Import =*/
+
+/* = ROOT =*/
+:root {
+  --clr-white: #fff;
+  --clr-black: #000;
+  --clr-black01: #333;
+}
+
+/* = General Design =*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+img {
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1 {
+  font-size: 2.4rem;
+}
+p {
+  letter-spacing: 0.1rem;
+}
+body {
+  width: 100%;
+  background-color: var(--clr-white);
+}
