@@ -148,7 +148,7 @@
 }
 .slider-Price::after {
   content: " ";
-  border: 2px solid #fff;
+  border: 2px solid #369e62;
   display: flex;
   width: 35%;
   margin-top: 1rem;
@@ -190,4 +190,20 @@
 }
 .slider__item:nth-child(5) .slider-Bg {
   background-color: rgb(124, 115, 80);
+}
+
+.slider__item:nth-child(1) .slider-Price {
+  color: #369e62;
+}
+.slider__item:nth-child(2) .slider-Price {
+  color: #fff;
+}
+.slider__item:nth-child(3) .slider-Price {
+  color: teal;
+}
+.slider__item:nth-child(4) .slider-Price {
+  color: cornflowerblue;
+}
+.slider__item:nth-child(5) .slider-Price {
+  color: cornsilk;
 }
