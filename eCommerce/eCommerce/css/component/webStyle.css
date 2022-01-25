@@ -113,3 +113,59 @@
 .slider__img {
   z-index: 1;
 }
+.slider-Tittle {
+  position: absolute;
+  color: #fff;
+  z-index: 1;
+  top: 10%;
+  right: 10%;
+  font-size: 6rem;
+  text-align: center;
+  font-weight: bold;
+}
+.slider-Tittle::after {
+  content: " ";
+  border: 2px solid #fff;
+  display: flex;
+  margin-top: 0.5rem;
+  border-radius: 1rem;
+}
+.slider-Price {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 1;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: center;
+}
+.slider-Price::after {
+  content: " ";
+  border: 2px solid #fff;
+  display: flex;
+  width: 35%;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+.btn-buy {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  z-index: 1;
+  font-size: 2.5rem;
+  padding: 2rem;
+  color: #fff;
+  border: 1px solid #333;
+  background-color: #000;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+.btn-buy:hover {
+  background: #fff;
+  border: #fff;
+  color: #000;
+}
+.btn-buy:active {
+  transform: scale(0.9);
+}
