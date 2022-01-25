@@ -207,3 +207,38 @@
 .slider__item:nth-child(5) .slider-Price {
   color: cornsilk;
 }
+/*Feature*/
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+  width: 100%;
+  margin: 3rem auto;
+}
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.feature-icon {
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+}
+.feature-title {
+  font-size: var(--font-tall);
+  font-weight: 600;
+  padding: 1rem;
+  margin: 0 auto;
+}
+.feature-Desc {
+  width: 50%;
+  height: 6rem;
+  filter: opacity(0.5);
+  text-align: center;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  font-size: var(--font-small);
+}
