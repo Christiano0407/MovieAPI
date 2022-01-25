@@ -487,3 +487,6 @@
   border-radius: 1rem;
   box-shadow: 2px 20px 30px #333;
 }
+.new__Season {
+  display: flex;
+}
