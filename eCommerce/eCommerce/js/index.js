@@ -79,3 +79,9 @@ const products = [
     ],
   },
 ];
+
+// Products ==>
+let choseProducts = products[0];
+
+// Products Current>
+//const currentProductImg = document.querySelector(".")
