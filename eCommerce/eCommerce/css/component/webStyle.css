@@ -474,10 +474,11 @@
   align-items: center;
   flex-direction: column;
 }
-.item-title:nth-child(3)::after {
+.item-title:nth-child(3)::before {
   content: " ";
   display: flex;
   border: solid 2px #000;
+  width: 25%;
 }
 .item-img {
   width: 200px;
