@@ -110,6 +110,12 @@
   align-items: center;
   justify-content: center;
 }
+.slider-Bg {
+  width: 750px;
+  height: 750px;
+  border-radius: 50%;
+  position: absolute;
+}
 .slider__img {
   z-index: 1;
 }
@@ -168,4 +174,20 @@
 }
 .btn-buy:active {
   transform: scale(0.9);
+}
+
+.slider__item:nth-child(1) .slider-Bg {
+  background-color: #369e62;
+}
+.slider__item:nth-child(2) .slider-Bg {
+  background-color: rebeccapurple;
+}
+.slider__item:nth-child(3) .slider-Bg {
+  background-color: teal;
+}
+.slider__item:nth-child(4) .slider-Bg {
+  background-color: cornflowerblue;
+}
+.slider__item:nth-child(5) .slider-Bg {
+  background-color: rgb(124, 115, 80);
 }
