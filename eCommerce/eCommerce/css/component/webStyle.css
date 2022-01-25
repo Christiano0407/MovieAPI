@@ -246,10 +246,16 @@
 /* = Product =*/
 .product {
   height: 100vh;
+  width: 100%;
   background-color: rgb(212, 211, 211);
   /*  background-color: #369e62; */
   position: relative;
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  background-image: url("/eCommerce/src/assets/img/shoes.jpg");
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .product-img {
   width: 50%;
