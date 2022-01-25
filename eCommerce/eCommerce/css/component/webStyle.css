@@ -128,6 +128,7 @@
   font-size: 6rem;
   text-align: center;
   font-weight: bold;
+  font-family: var(--font-familyTwo);
 }
 .slider-Tittle::after {
   content: " ";
@@ -341,6 +342,25 @@
 .product-btn:active {
   transform: scale(0.9);
 }
+/*Tendencias*/
+.tendencias {
+  width: 100%;
+  margin: 2rem auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.tendencias h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: var(--font-familyTwo);
+}
+.tendencias a {
+  font-size: 4rem;
+  color: #333;
+  margin-left: 4rem;
+}
 /*gallery-One*/
 .gallery__One {
   position: relative;
@@ -355,8 +375,114 @@
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
   padding: 2rem;
+}
+.gallery-one {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  background-image: url(/eCommerce/src/assets/img/shoe01.jpg);
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* width: 100%; */
+  /* height: 100%; */
+  border-radius: 1rem;
+}
+.gallery-two {
+  grid-column: 3 / 5;
+  grid-row: 1 / 3;
+  background-image: url(/eCommerce/src/assets/img/shoew04.jpg);
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+}
+.gallery-three {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  background-image: url(/eCommerce/src/assets/img/shoe02.jpg);
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+}
+.gallery-four {
+  background-image: url(/eCommerce/src/assets/img/shoew03.jpg);
+  grid-column: 5 / 7;
+  grid-row: 1 / 2;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+}
+.gallery-five {
+  background-image: url(/eCommerce/src/assets/img/shoew05.jpg);
+  grid-column: 5 / 7;
+  grid-row: 2 / 3;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+}
+/*Gallery Two*/
+.gallery__Two {
+  padding: 5rem;
+  display: flex;
+}
+.gallery-item {
+  padding: 5rem;
+  flex: 1;
+}
+.item-title {
+  font-size: 2.2rem;
+  margin: 2rem auto;
+  font-weight: 900;
+}
+.item-title:nth-child(1) {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.item-title:nth-child(2) {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.item-title:nth-child(2)::after {
+  content: " ";
+  display: flex;
+  border: solid 2px #000;
+  width: 50%;
+}
+
+.item-title:nth-child(3) {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+}
+.item-title:nth-child(3)::after {
+  content: " ";
+  display: flex;
+  border: solid 2px #000;
+}
+.item-img {
+  width: 200px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 2px 20px 30px #333;
 }
