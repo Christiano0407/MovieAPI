@@ -74,6 +74,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
 }
 .nav__btn .nav__btn--list {
   width: 75%;
@@ -89,5 +90,26 @@
 .nav__btn .nav__btn--list a span {
   font-size: 1.5rem;
   font-weight: 500;
-  color: #333;
+  color: #fff;
+}
+
+/* = Slider =*/
+.slider {
+  background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  overflow: hidden;
+}
+.slider__wrapper {
+  display: flex;
+  width: 500vw;
+}
+.slider__item {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider__img {
+  z-index: 1;
 }
