@@ -19,6 +19,8 @@
   --margin-left: 1rem;
   --margin-top: 2rem;
   --margin-bottom: 2rem;
+  /*font-2*/
+  --font-familyTwo: "Prompt", sans-serif;
 }
 /* === General Project === */
 *,
@@ -59,4 +61,5 @@ h1 {
 body {
   width: 100%;
   font-family: "Lato", sans-serif;
+  /* font-family: 'Prompt', sans-serif; */
 }
