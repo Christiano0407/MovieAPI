@@ -64,4 +64,6 @@
   width: 75%;
   margin-top: 0.5rem;
   border-radius: 0.5rem;
+  transition: one 0.3s ease-in-out;
 }
+/*nav__btn*/
