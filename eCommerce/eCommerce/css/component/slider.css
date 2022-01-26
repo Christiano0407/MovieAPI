@@ -1,0 +1,116 @@
+.slider {
+  background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  overflow: hidden;
+}
+/* = Slider =*/
+
+.slider__wrapper {
+  display: flex;
+  width: 500vw;
+}
+.slider__item {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-Bg {
+  width: 750px;
+  height: 750px;
+  border-radius: 50%;
+  position: absolute;
+}
+.slider__img {
+  z-index: 1;
+}
+.slider-Tittle {
+  position: absolute;
+  color: #fff;
+  z-index: 1;
+  top: 10%;
+  right: 10%;
+  font-size: 6rem;
+  text-align: center;
+  font-weight: bold;
+  font-family: var(--font-familyTwo);
+}
+.slider-Tittle::after {
+  content: " ";
+  border: 2px solid #fff;
+  display: flex;
+  margin-top: 0.5rem;
+  border-radius: 1rem;
+}
+.slider-Price {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 1;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: center;
+}
+.slider-Price::after {
+  content: " ";
+  border: 2px solid #369e62;
+  display: flex;
+  width: 35%;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+.btn-buy {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  z-index: 1;
+  font-size: 2.5rem;
+  padding: 2rem;
+  color: #fff;
+  border: 1px solid #333;
+  background-color: #000;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+.btn-buy:hover {
+  background: #fff;
+  border: #fff;
+  color: #000;
+}
+.btn-buy:active {
+  transform: scale(0.9);
+}
+
+.slider__item:nth-child(1) .slider-Bg {
+  background-color: #369e62;
+}
+.slider__item:nth-child(2) .slider-Bg {
+  background-color: rebeccapurple;
+}
+.slider__item:nth-child(3) .slider-Bg {
+  background-color: teal;
+}
+.slider__item:nth-child(4) .slider-Bg {
+  background-color: cornflowerblue;
+}
+.slider__item:nth-child(5) .slider-Bg {
+  background-color: rgb(124, 115, 80);
+}
+
+.slider__item:nth-child(1) .slider-Price {
+  color: #369e62;
+}
+.slider__item:nth-child(2) .slider-Price {
+  color: #fff;
+}
+.slider__item:nth-child(3) .slider-Price {
+  color: teal;
+}
+.slider__item:nth-child(4) .slider-Price {
+  color: cornflowerblue;
+}
+.slider__item:nth-child(5) .slider-Price {
+  color: cornsilk;
+}

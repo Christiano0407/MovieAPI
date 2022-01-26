@@ -1,6 +1,11 @@
 /* === Componenent / Landing / MediaQueries=== */
 @import url("../css/mediaQuerie/mediaQueries.css");
+@import url("/eCommerce/css/component/nav.css");
 @import url("../css/component/webStyle.css");
+@import url("/eCommerce/css/component/slider.css");
+@import url("/eCommerce/css/component/features.css");
+@import url("/eCommerce/css/component/product.css");
+@import url("/eCommerce/css/component/gallery.css");
 @import url("../css/keyframe/animation.css");
 /* === ROOT === */
 :root {
