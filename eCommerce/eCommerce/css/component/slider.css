@@ -87,30 +87,30 @@
   background-color: #369e62;
 }
 .slider__item:nth-child(2) .slider-Bg {
-  background-color: rebeccapurple;
+  background-color: rgb(124, 10, 238);
 }
 .slider__item:nth-child(3) .slider-Bg {
-  background-color: teal;
+  background-color: rgb(9, 247, 247);
 }
 .slider__item:nth-child(4) .slider-Bg {
-  background-color: cornflowerblue;
+  background-color: rgb(1, 89, 252);
 }
 .slider__item:nth-child(5) .slider-Bg {
-  background-color: rgb(124, 115, 80);
+  background-color: rgb(248, 3, 175);
 }
 
 .slider__item:nth-child(1) .slider-Price {
   color: #369e62;
 }
 .slider__item:nth-child(2) .slider-Price {
-  color: #fff;
+  color: rgb(124, 10, 238);
 }
 .slider__item:nth-child(3) .slider-Price {
-  color: teal;
+  color: rgb(9, 247, 247);
 }
 .slider__item:nth-child(4) .slider-Price {
-  color: cornflowerblue;
+  color: rgb(1, 89, 252);
 }
 .slider__item:nth-child(5) .slider-Price {
-  color: cornsilk;
+  color: rgb(248, 3, 175);
 }
