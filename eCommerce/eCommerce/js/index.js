@@ -131,3 +131,15 @@ currentProductSizes.forEach((size, index) => {
     size.style.color = "white";
   });
 });
+
+const productBtn = document.querySelector(".product-btn");
+const payment = document.querySelector(".payment");
+const closeOff = document.querySelector(".close");
+
+productBtn.addEventListener("click", () => {
+  payment.style.display = "flex";
+});
+
+/* closeOff.addEventListener("click", () => { */
+/*   payment.style.display = "none"; */
+/* }); */
