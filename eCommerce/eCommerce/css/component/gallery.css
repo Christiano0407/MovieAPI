@@ -12,10 +12,21 @@
   font-weight: 700;
   font-family: var(--font-familyTwo);
 }
+.tenBord {
+  width: 60%;
+  position: absolute;
+  height: 5px;
+  background: #000;
+  border-radius: 1rem;
+  margin-top: 8rem;
+}
 .tendencias a {
   font-size: 4rem;
   color: #333;
   margin-left: 4rem;
+}
+.tendencias a i {
+  margin-right: 2rem;
 }
 /*gallery-One*/
 .gallery__One {

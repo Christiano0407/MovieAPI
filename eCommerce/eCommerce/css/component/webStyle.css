@@ -23,6 +23,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  filter: contrast(0.5);
 }
 .new-titleSm {
   margin: 1rem auto;
@@ -43,4 +44,22 @@
   font-size: 4rem;
   margin: 1rem auto;
   padding: 0.5rem;
+  font-family: var(--font-familyTwo);
+}
+.new-title.two {
+  font-weight: bold;
+  font-family: var(--font-familyTwo);
+  font-size: 2.5rem;
+}
+.new-button {
+  padding: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  margin: 1rem auto;
+}
+.new-button:active {
+  transform: scale(0.9);
 }
